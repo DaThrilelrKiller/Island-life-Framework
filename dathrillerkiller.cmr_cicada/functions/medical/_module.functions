@@ -1,0 +1,11 @@
+[
+"marker",
+"respawn",
+"setPos",
+"timer",
+"getTime",
+"terminate",
+"drag",
+"Effect",
+"revive"
+];

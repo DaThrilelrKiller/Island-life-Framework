@@ -1,0 +1,281 @@
+Version 1 - 122 Files changed
+
+DaThrillerKiller - Removed string functions that were not needed.
+DaThrillerKiller - removed old Loading titleText
+DaThrillerKiller - Added a wait to make sure bis functions were compiled
+DaThrillerKiller - Made it so TFR freqs. where not encrypted
+DaThrillerKiller - Converted TFR and drug functions to a module based system
+DaThrillerKiller - Fixed string length functions which converts a string to certain length
+DaThrillerKiller - Fixed money dupe when selling sirens glitch
+DaThrillerKiller - made the shop sell list refresh after selling something
+DaThrillerKiller - Change toggle plates function to be faster and more simple in code
+DaThrillerKiller - Removed Keypress module because it was done messing with it trying to get it to work the way i intended in to work
+DaThrillerKiller - Tweaked the admin menu to make it more user friendly
+DaThrillerKiller - Fixed shipment dialog button being under the map
+DaThrillerKiller - Optimized if statments in the speedcam file.
+DaThrillerKiller - Removed defined but not used local variables in the shopfarmfaclicenseactions.sqf file
+DaThrillerKiller - removed ClientSetupMap because it was not being used
+DaThrillerKiller - New format the module loading messages
+DaThrillerKiller - Converted functions from preprocessFileLineNumbers to preprocessFile because all our files are 1 line anyways (in theory this should use less ram)
+DaThrillerKiller - Made it so u dont get kick when using drugs for spawning smokeShells
+Trevor - Removed more buildings off the map
+DaThrillerKiller - Changed medical marker name
+Trevor - Added Three more whitelist for some faction that i have no clue what they are
+Trevor - Added some more new vehicles 
+Trevor - Added another Spawn for Tristen's Pizzeria
+Trevor - Changed default sirens that spawn on vehicles
+Trevor - Fixed spelling mistakes
+DaThrillerKiller - Cleaned up the init files a bit more / faster loading times
+Trevor - Added another ATM to the map
+
+Version 1.1 - 103 Files changed
+DaThrillerKiller - Improved anti hack a bit
+DaThrillerKiller - Converted string functions to modules
+DaThrillerKiller - Added new medical system and removed old one
+Trevor - Removed the GMC Ambo for some reason?
+Trevor - Removed Stretcher from untrained box
+Trevor - Added new Truck the Rattlers Tucking Service
+Trevor - Added DTKs new vehicles
+DaThrillerKiller - Changed respawn delay
+DaThrillerKiller - Fixed time to string function
+DaThrillerKiller - Fixed shop bug where it basicly just fucked up the prices
+DaThrillerKiller - Removed shop functions that were blank
+DaThrillerKiller - Deleted the dumb dropbox cache directory
+DaThrillerKiller - Added new atm Menu and module 
+DaThrillerKiller - Removed old atm scripts
+DaThrillerKiller - Changed the ways active buttons look
+DaThrillerKiller - Removed all chat channels
+DaThrillerKiller - Added new twitter feed
+DaThrillerKiller - When using chat commands they no longer show up for everyone example: !peforance
+DaThrillerKiller - Added new chat tags example: [Developer]
+DaThrillerKiller - fixed isNumber function
+
+Version 1.2 - 135 Files changed
+DaThrillerKiller - re did some of the server side functions to serverside modules 
+DaThrillerKiller - Added a JIP event script for modules 
+DaThrillerKiller - IMplmented a new/redone antihack again 
+DaThrillerKiller - Removed old antihack 
+DaThrillerKiller - Abilty for ems to drag bodies 
+DaThrillerKiller - fixed atm showing invers amounts for bank and money 
+DaThrillerKiller - fixed shops refresh function
+DaThrillerKiller - Improve Twiiter a bit more
+DaThrillerKiller - Added new Medical Uncon effect
+DaThrillerKiller - Fixed Purchase function
+DaThrillerKiller - Added in server Authentication to make sure all functions are loaded
+DaThrillerKiller - Converted join the server chat to systemchat
+DaThrillerKiller - More Orgainzation server side
+
+Version 1.3 - 57 Files changed
+Trevor - Fixed some spelling mistakes
+DaThrillerKiller - moved more variable to their correct module
+DaThrillerKiller - Fixed hud not showing for some people
+DaThrillerKiller - Added example module with event scripts for refrence
+DaThrillerKiller - removed outdated variables
+Trevor - Changed shops file, dont know what he did
+
+Version 1.4 - 16 Files changed
+DaThrillerKiller - Made it so you can only acess vehicle gear if you have keys
+DaThrillerKiller - backend optimization
+
+Version 1.5
+
+Version 1.6 25 Files Changed
+DaThrillerKiller - New SpeedCam module witch adds note to the computer under the car licence plate lookup, so the computer has more use now
+DaThrillerKiller - New Hunger module 
+DaThrillerKiller - Optimized and added another pram to the cdb_AddNote function
+DaThrillerKiller - Deleted old hunger and speedcam files and variables
+
+Version 1.7 128 Files Changed
+DaThrillerKiller - Removed unused server side variables
+DaThrillerKiller - Added Ipad to the modules system
+DaThrillerKiller - Added Vehcile keys to its own module 
+DaThrillerKiller - Added Bis functions to its own module
+DaThrillerKiller - you can now see the ID of the person u detained
+DaThrillerKiller - Made cookies,garage, and siren client side ;) scence the mission is now open sourse and theres no poin in protecting them
+DaThrillerKiller - New and more optimized licence functions
+DaThrillerKiller - Removed alot of unused neglected files
+DaThrillerKiller - Removed TFR Loop hopefuly this will help prevent TFR crashes
+DaThrillerKiller - Fixed markers not showing for civ so they can see where they are if the gamemode is on veteran
+DaThrillerKiller - Removed volenteer fire deparment
+DaThrillerKiller - Removed volenteer fire deparment
+DaThrillerKiller - Implemented the old broadcast system into the new one
+DaThrillerKiller - Implemented a new map navigation system still work in progress
+DaThrillerKiller - new shop infex function
+DaThrillerKiller - Removed the current function and module statues while loading in now apears in the .RPT file instead
+DaThrillerKiller - New clothes module
+DaThrillerKiller - New clothes module
+DaThrillerKiller - New ExecVM function for the network
+DaThrillerKiller - New reset safecode function 100% random now
+DaThrillerKiller - increased starvation time
+
+Version 1.8 81 Files Changed
+DaThrillerKiller - Removed impound save loop it now save over the network when a vehciel is impounded
+DaThrillerKiller - Removed old gang files
+DaThrillerKiller - added new gang module, complete over haul and allow ranks to be set for gangs
+DaThrillerKiller - gangs can now change names
+DaThrillerKiller - gangs can set custom ranks per member
+DaThrillerKiller - gangs can invite people 
+DaThrillerKiller - overall better experence within the gang menu
+DaThrillerKiller - re wrote server side compile functions file
+DaThrillerKiller - Remove unneed whitelist
+DaThrillerKiller - change stun file to hopfuly work better
+DaThrillerKiller - remove all unneeded strings from strinable.cvs
+DaThrillerKiller - added gang logic to mission.sqm
+DaThrillerKiller - spawn menu added to the new module system 
+DaThrillerKiller - split_string function added to string module
+DaThrillerKiller - remove revive function to the medical module
+DaThrillerKiller - change the way keys work when locating the nearest vehicle, its alot better now!
+DaThrillerKiller - new dance module, basicly moves the y key animation to module
+DaThrillerKiller - removed old admin menu
+DaThrillerKiller - remove unneeded spawn points
+DaThrillerKiller - removed unneeded shops from shop file
+
+Version 1.9  50 Files Changed
+DaThrillerKiller - Remove unused modules they might be implmented at a later state
+
+Version 2.0 52 Files Changed
+DaThrillerKiller - Removed the warrant app for police forcing them to use the crimnal Database
+DaThrillerKiller - Added new way for gang actions to capture teratory
+DaThrillerKiller - Changed the way Switching clothing actions worked
+DaThrillerKiller - New Clothing module, more optimized adds actions direcly to object witch is better for performance
+DaThrillerKiller - Removed old dialogs
+DaThrillerKiller - Changed Chat tag to guest by default instead of side name
+DaThrillerKiller - added more time to the core loop
+DaThrillerKiller - Made it so you can now sell apps on the app store
+DaThrillerKiller - More clean up
+DaThrillerKiller - Fixed lossing money when buying somting and you dont have enought room
+DaThrillerKiller - you can now sell apps and sirens
+DaThrillerKiller - you can now only have 3 sirens on a vehicle at at time
+DaThrillerKiller - new gas pump module, to refuel a car u get our and pick a pump and click buy gas
+DaThrillerKiller - Removed long wait for installing new sirens, now instant
+DaThrillerKiller - Changed the way vehicle lock was displayed on hud
+DaThrillerKiller - Sirens now save on vehciels
+DaThrillerKiller - changed to the new patrol uniform in the missoin.sqm no longer need to switch to it
+
+Version 2.1 89 Files Changed
+DaThrillerKiller - Moved changelog to server side with a link in client files to veiw it on github
+DaThrillerKiller - Moved all scripts from main directory to "\scripts"
+DaThrillerKiller - Tweaked network system, locality based commands should now work if they did not already
+DaThrillerKiller - Compiled all functions in serverload to one file
+DaThrillerKiller - Improved uneeded code from init files
+DaThrillerKiller - Vehcile damage tracker so we can now put engine and tire damage on hud
+DaThrillerKiller - It now shows who pulled you out of a vehicle
+DaThrillerKiller - Optimized some getVariable commands
+DaThrillerKiller - Made it so only civilains have the optain to rob places
+DaThrillerKiller - added Network say3D commands in network module
+DaThrillerKiller - Removed nil object from clothing variables
+DaThrillerKiller - Other improvments
+
+Version 2.2 109 Files Changed
+DaThrillerKiller - New tag system aka atm and shop tags
+DaThrillerKiller - Mass improvment to loading times it alot faster
+DaThrillerKiller - Moved actions directory
+DaThrillerKiller - Fixed gear lock breaking after opening ammo box
+DaThrillerKiller - Shop tags turn read if you are not whitelisted to acess them
+DaThrillerKiller - Removed old Say3D system and implmented new one
+DaThrillerKiller - Added weapon shipments for player to do
+DaThrillerKiller - Fixed some foods not working like donuts
+DaThrillerKiller - Alot of UI optimization this optimization is really noticable in UI that involce listboxs for actions
+DaThrillerKiller - Added more shipment locations
+
+Version 2.3
+DaThrillerKiller - Removed PSO and everything with it
+DaThrillerKiller - Added "Open Garage" to tags and made it so you press E to open it
+DaThrillerKiller - New Storage seach function for both cars and players
+DaThrillerKiller - New licence check function
+DaThrillerKiller - Changed the way items are given to people (needs to be tested)
+DaThrillerKiller - Optimized Keybinding UI
+DaThrillerKiller - Fixed it so you can acess info stand gear... this is important how are people going to get weapons silly me
+DaThrillerKiller - Removed BAL functions
+DaThrillerKiller - Removed all stat thingy dialog
+DaThrillerKiller - Fixed interaction menus
+DaThrillerKiller - Fixed giving key message (needs to be tested in a MP enviment)
+DaThrillerKiller - Fixed pullind out player for real this time, hopefuly it suck not having someon to test thing that require two peope
+DaThrillerKiller - core_addLoop now returns a unique ID to index that function and remove it
+DaThrillerKiller - added abilty to remvoe code from core loop
+
+Version 2.4
+DaThrillerKiller - Removed mayor system
+DaThrillerKiller - Added new goverment system, you now have to run for govonor
+DaThrillerKiller - removed item scripts that we dont use anymore
+DaThrillerKiller - Permenant fix for PublicVariableClient within the network system, now we can do things more efficently across the network
+
+Version 2.5
+DaThrillerKiller - Brand new quest system to earn bounse cash while doing a task
+DaThrillerKiller - New fishing system makers are now 100% dynamic per restart, and new fish
+DaThrillerKiller - New chat commands "!quest" to check quest info
+DaThrillerKiller - New random intiger function with min and max values
+DaThrillerKiller - All network trafic is now logged on the server
+DaThrillerKiller - moved whitelist variables to .variable file
+
+Version 2.6
+DaThrillerKiller - Removed useless things from repo
+DaThrillerKiller - Added a day/Night cycle still needs a bit of configuration
+DaThrillerKiller - Organized server side modules a bit more
+DaThrillerKiller - Gangs now save after restart
+DaThrillerKiller - Optimized alot of if statments
+DaThrillerKiller - Changed the way TFAR is loaded on the server
+DaThrillerKiller - Optimized the way keybindings are loaded
+DaThrillerKiller - Changed the way, the weapon HUD is displayed when holster to make it more pleasent to the eye
+DaThrillerKiller - added a message that says no one has ran for govonor, if there is none at the end of election
+DaThrillerKiller - You can now, open a dead players gear
+DaThrillerKiller - Core loop now supports times as low as 0.5 seconds 
+DaThrillerKiller - Alot of getVariable optimization again
+DaThrillerKiller - The ATM menu now shows 73,000,000 instead of 7.3e7 
+DaThrillerKiller - Added a function that reveses array
+DaThrillerKiller - Made console a bit more user friendly
+
+Version 2.7
+DaThrillerKiller - Added a border
+DaThrillerKiller - New Vehicle role over function, more use friendly and op[timized
+DaThrillerKiller - New Key unlocking function that displays the vehicle that you unlocked instead of just "Vehcile unlocked"
+DaThrillerKiller - New Vehcile save/retrive system, you retrive vehicle at any marked garage on the map
+DaThrillerKiller - Removed vehicle information, not really needed fro gameplay anymore
+DaThrillerKiller - Renamed alot of vehicle so that color is after, that way when they or sorted in abc order they are correct
+DaThrillerKiller - Removed fishing
+DaThrillerKiller - New oil module
+DaThrillerKiller - New impound functions
+DaThrillerKiller - All close buttons now work
+DaThrillerKiller - New config backend
+DaThrillerKiller - Added free cam to admin menu
+DaThrillerKiller - New Camera Module
+DaThrillerKiller - redid checkpoit module 
+DaThrillerKiller - New shopping system
+DaThrillerKiller - Fixed shop lag
+DaThrillerKiller - New funciton that build player array
+DaThrillerKiller - New spawn menu animations
+DaThrillerKiller - you can now spawn at your last know location if you login within 3 minutes of disconecting
+DaThrillerKiller - New speedcam system markers are automaticly made
+DaThrillerKiller - New intro system
+
+Version 2.8
+DaThrillerKiller - Switch to Takistan
+
+Version 2.9
+DaThrillerKiller - New Holster system
+DaThrillerKiller - New Impound System
+DaThrillerKiller - Removed EMS missions
+DaThrillerKiller - Improved Shopping System
+DaThrillerKiller - Renamed statsave functions
+DaThrillerKiller - Fixed Gangs not deleting when no one is in them
+DaThrillerKiller - Funciton to get weapon Kind
+DaThrillerKiller - the CreateVehicle function now returns the vehicle created
+DaThrillerKiller - Moved server cleaner to new module (for some reason its not being added to the core loop)
+DaThrillerKiller - Overall Orgainzation and Orgainzation update 
+
+Version 3.0
+DaThrillerKiller - Added seperate holster for Taser ctrl + 3 
+DaThrillerKiller - New 3D User Interface
+DaThrillerKiller - code is now stored as string in the master array
+
+Version 3.1
+DaThrillerKiller - Added Cruise Control
+DaThrillerKiller - Added New Key press module. This allows developers in the future to add key handlers 10x easier
+DaThrillerKiller - Removed old key binding module - Was good at the time, but now is junk
+DaThrillerKiller - Fixed core_SelectNested causing errors aka "Zero Devisor"
+DaThrillerKiller - Added images for inventory items
+DaThrillerKiller - ATM markers are now created via script
+DaThrillerKiller - New escort funtion togled by pressing U unless you change it threw your settings
+
+
+

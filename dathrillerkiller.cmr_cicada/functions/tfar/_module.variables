@@ -1,0 +1,16 @@
+module_TFR = true;
+TF_MAX_ASIP_FREQ                    = 108;
+tf_west_radio_code                  = "";
+tf_guer_radio_code                  = tf_west_radio_code;
+tf_civ_radio_code                   = tf_west_radio_code;
+AR_Radios = [];
+tf_radio_channel_password           = "DaThillaKilla";
+tf_radio_channel_name               = "TaskForceRadio";
+TF_terrain_interception_coefficient = -4;
+tf_no_auto_long_range_radio         = true;
+TF_defaultWestPersonalRadio         = "tf_anprc148jem";
+TF_defaultEastPersonalRadio         = "tf_pd785";
+TF_defaultGuerPersonalRadio         = "tf_anprc152";
+TF_defaultWestBackpack              = "";
+TF_defaultEastBackpack              = "";
+TF_defaultGuerBackpack              = "";
