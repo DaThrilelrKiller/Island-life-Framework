@@ -1,22 +1,22 @@
-medical_respawn = {
 private ["_unit","_corps","_time"];
 
 _unit = _this select 0;
 _corps = _this select 1;
-
-["ALL",_corps,{_this setUnconscious true;},false,true]call network_MPExec;
-["ALL",_corps,{_this allowDamage false;},false,true]call network_MPExec;
-
-[_unit] joinSilent _corps;
-addSwitchableUnit _corps;
-selectPlayer _corps;
+_time = time;
 
 _unit setDamage 0;
 _corps setDamage 0;
-_time = time;
+["ALL",player,{_this setUnconscious true;},false,true]call network_MPExec;
+["ALL",player,{_this allowDamage false;},false,true]call network_MPExec;
 
+
+removeAllWeapons _unit;
 []call storage_dropall;
+
 []spawn medical_Effect; 
+ 
+/* waits until the corps is not moving to prevent another dealth */
+waitUntil {(str (velocity _corps)) == '[0,0,0]'};
 
 ["ALL",["dtk_side == 'EMS'",format ["%1 Has Died Near %3 (cords: %2)",name player, ([_corps]call Emita_GetGridRef),location_name],2],"network_chat",false,false]call network_MPExec;
 
@@ -24,4 +24,3 @@ _this call medical_marker;
 _this call medical_setPos;
 [_unit,_corps,_time] spawn medical_timer;
 
-};

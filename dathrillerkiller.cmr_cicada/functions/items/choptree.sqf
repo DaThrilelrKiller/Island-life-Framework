@@ -5,7 +5,7 @@ Exec: When Axe is used.
 Written by: ZKB1325
 */
 
-private ["_art","_gettreereturn","_choppedtree","_amountchopped","_amount","_treecuttinlvlinc","_k"];
+private ["_art","_gettreereturn","_choppedtree","_amountchopped","_amount","_treecuttinlvlinc","_k","_object","_i"];
 
 _art = _this select 0;
 
@@ -38,8 +38,20 @@ if ((player distance getmarkerpos "forest" < 175) or (player distance getmarkerp
 	   
 			_x setdamage 1;  
 
-			[player,_choppedtree,_amountchopped] call storage_add;
-			systemChat format ["you chopped down a tree and got %1 %2", _amount, _choppedtree call config_displayname];
+			for "_i" from 0 to _amountchopped step 1 do 
+			{
+				_object = "cl_wood" createVehicle getPos player;
+				_object  setvehicleinit format["
+				this setVehicleVarName 'vehicle_%4_%5';
+				vehicle_%4_%5 = this; 
+				this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
+				[this,'Pickup %1 (%2) (E)','sfg_textures\items\lummber']call tag_add;
+				", "Wood", 1,"wood",round(random 10), round(time)];
+				processInitCommands;
+			};
+			
+			
+			systemChat format ["you chopped down a tree and got %1 %2", _amountchopped, _choppedtree call config_displayname];
 			
 			_foundtree = true;
 			};

@@ -952,7 +952,7 @@ dtk_items = [
 ["wiskey",["Item", "drink"],["wiskey", "Jack Daniels"],[1200, 800], [0.5, "",""], [true, true, true,false,"alkeffekt"] ],
 ["wine",["Item", "drink"],["wine", "White Wine"],[850, 850], [0.5, "",""], [true, true, true,false,"alkeffekt"]],
 ["wine2",["Item", "drink"],["wine2", "Red Wine"],[100, 100], [0.5, "",""], [true, true, true,false,"alkeffekt"]],
-["wood",["Item", "ressource"],["cl_wood", "wood"],[750, 750], [2.5, "",""], [true, true, true,false,"useresource"]],
+["wood",["Item", "ressource"],["Land_Campfire_burning", "wood"],[750, 750], [2.5, "",""], [true, true, true,false,"createobject"]],
 ["woodaxe", ["Item", "misc"], ["woodaxe", "Axe"],[3000, 3000], [1, "", ""],[true,true,true, false, "choptree"]], 
 ["treeseed", ["Item", "misc"], ["treeseed", "Tree Seed"],[3000, 3000], [1, "", ""],[true,true,true, false, "planttree"]], 
 ["lumber", ["Item", "misc"], ["lumber", "Lumber"],[1000, 1000], [1, "", ""],[true,true,true, false, "useresource"]], 
@@ -1025,7 +1025,6 @@ dtk_items = [
 ["Shovel", ["Item", "misc"], ["Suitcase", "Shovel"],[550, 550], [1, "", ""],[true,true,true, false, "mine"]],
 ["Pickaxe", ["Item", "misc"], ["Suitcase", "Pickaxe"],[1000, 1000], [1, "", ""],[true,true,true, false, "mine"]],
 ["JackHammer", ["Item", "misc"], ["Suitcase", "Jack Hammer"],[20000, 20000], [1, "", ""],[true,true,true, false, "mine"]],
-["fishingpole", ["Item", "Shop"], ["Suitcase", "Fishing Pole"],[100, 100], [5, "", ""],[true,true,true, false, {}]],
 ["GunrackUS_EP1", ["Item", "misc"], ["GunrackUS_EP1", "Gunrack"],[10000, 10000], [20, "", "", 400],[true,true,true, false, "createobject"]],
 ["TKOrdnanceBox_EP1", ["Item", "misc"], ["TKOrdnanceBox_EP1", "Hideout storage"],[10000, 10000], [20, "", "", 600],[true,true,true, false, "createobject"]],
 ["emptywine",["Item", "drink"],["Suitcase", "Empty Wine Bottle"],[0, 0], [0.3, "",""], [true, true, true,false,"nouse"]],
@@ -1191,6 +1190,7 @@ dtk_items = [
 ["dtk_shipment3",["shipment", "shipment"],["dtk_shipment3", "Assault Rifle Shipment"],[100000, 3500], [200, "",""], [true, false, true,false,"nouse"]],
 ["dtk_shipment4",["shipment", "shipment"],["dtk_shipment4", "Sniper Shipment"],[100000, 4500], [300, "",""], [true, false, true,false,"nouse"]],
 ["dtk_shipment5",["shipment", "shipment"],["dtk_shipment5", "Nuclear Weapon Shipment"],[100000, 5500], [350, "",""], [true, false, true,false,"nouse"]],
+
 ["fishing_turtle",["Item", "fish"],["fishing_turtle", "Turtle"],[1250, 1250], [1, "",""], [true, true, true,false,{}]],
 ["fish_catfish",["Item", "fish"],["fish_catfish", "Catfish"],[1100, 1100], [1, "",""], [true, true, true,false,{}]],
 ["fishing_whale",["Item", "fish"],["fishing_whale", "Whale"],[14000, 14000], [1, "",""], [true, true, true,false,{}]],
@@ -1199,6 +1199,16 @@ dtk_items = [
 ["fishing_walleye",["Item", "fish"],["fishing_walleye", "Walleye"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
 ["fishing_mackerel",["Item", "fish"],["fishing_mackerel", "Mackerel"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
 ["fishing_herring",["Item", "fish"],["fishing_herring", "Herring"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
+
+["fishing_turtle_cooked",["Item", "fish"],["fishing_turtle_cooked", "Turtle Soup"],[1250, 1250], [1, "",""], [true, true, true,false,{}]],
+["fish_catfish_cooked",["Item", "fish"],["fish_catfish_cooked", "Cooked Catfish"],[1100, 1100], [1, "",""], [true, true, true,false,{}]],
+["fishing_trout_cooked",["Item", "fish"],["fishing_trout_cooked", "Cooked Trout"],[1200, 1200], [1, "",""], [true, true, true,false,{}]],
+["fishing_bass_cooked",["Item", "fish"],["fishing_bass_cooked", "Cooked Bass"],[1150, 1150], [1, "",""], [true, true, true,false,{}]],
+["fishing_walleye_cooked",["Item", "fish"],["fishing_walleye_cooked", "Cooked Walleye"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
+["fishing_mackerel_cooked",["Item", "fish"],["fishing_mackerel_cooked", "Cooked Mackerel"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
+["fishing_herring_cooked",["Item", "fish"],["fishing_herring_cooked", "Cooked Herring"],[1000, 1000], [1, "",""], [true, true, true,false,{}]],
+
+["fishing_pole", ["Item", "Shop"], ["fishing_pole", "Fishing Pole"],[100, 100], [5, "", ""],[true,true,true, false, "fishing_pole"]],
 
 ["camera_basic",["Item", "misc"],["camera_basic", "Basic Camera"],[20000, 20000], [20, "",""], [false, true, false,false,"camera_place"]],
 ["camera_advanced",["Item", "misc"],["camera_advanced", "Advanced Camera"],[60000, 60000], [20, "",""], [false, true, false,false,"camera_place"]],

@@ -4,7 +4,7 @@ _item = _this select 0;
 
 _return = _item call {
 	if (_this == "schluesselbund")exitWith {"keychain"};
-	if (_this == "fishingpole")exitWith {"fishing-pole"};
+	if (_this == "fishing_pole")exitWith {"fishing-pole"};
 	if (_this == "cookie")exitWith {"Fortune_cookie"};
 	if (_this == "glass")exitWith {"glass"};
 	if (_this == "Gold")exitWith {"gold"};

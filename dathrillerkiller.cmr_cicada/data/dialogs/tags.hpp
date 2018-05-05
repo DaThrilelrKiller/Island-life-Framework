@@ -20,13 +20,12 @@ class tag {
 			colorBackground[] = {0,0,0,0};
 			colortext[] = {0,0,0,0.7};
 			text ="";
+			shadow = 2;
 			
 			class Attributes {
 				align = "right";
 				valign = "middle";
 				size = "2";
-				shadow = true;
-				shadowColor = "#2D2D2D";
 			};
 		};
 	};

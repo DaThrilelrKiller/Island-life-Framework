@@ -15,8 +15,10 @@ Prams:
 private ["_Deadplayer","_LifePack"];
 
 _Deadplayer = _this select 0;
-["ALL",_Deadplayer,{_this setUnconscious false;},false,true]call network_MPExec;
-["ALL",_Deadplayer,{_this allowDamage true;},false,true]call network_MPExec;
+[-2, {_this setUnconscious false;}, _Deadplayer] call CBA_fnc_globalExecute;
+[-2, {_this allowDamage true;}, _Deadplayer] call CBA_fnc_globalExecute;
+_Deadplayer setUnconscious false;
+_Deadplayer allowDamage true;
 
 LifePack = "lifepak" createVehicle getPos player;
 LifePack attachTo [_Deadplayer, [-0.4, 0.9, 0.2]];

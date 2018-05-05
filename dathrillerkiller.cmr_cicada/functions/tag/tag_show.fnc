@@ -10,7 +10,7 @@ _control = _display displayCtrl 54;
 
 _h = switch(toLower (unitPos _target))do{case 'auto':{2};case 'up':{2};case 'middle':{1.5};case 'down':{0.5};default {0}};
 _h = if (typeOf _target in ["DTK_InfoStand","Infostand_2_EP1"])then {1.5}else{_h};
-_h = if (typeOf _target == "Suitcase")then {0.5}else{_h};
+_h = if (typeOf _target in ["Suitcase","cl_wood"])then {0.5}else{_h};
 
 _p = getPosATL _target;
 _pos = worldToScreen [_p select 0, _p select 1, _h];

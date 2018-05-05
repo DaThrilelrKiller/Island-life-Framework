@@ -13,3 +13,5 @@ private ["_amount","_name","_i","_xcord","_ycord","_marker1"];
 
 }ForEach fishing_array;
 
+[10,s_fishing_cook]call core_AddLoop;
+

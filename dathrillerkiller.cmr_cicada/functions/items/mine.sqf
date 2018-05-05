@@ -69,10 +69,14 @@ _object setvariable ["droparray", [_amount, _resource], true];
 };
 
 _object  setvehicleinit format["
-this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2]];
+this setVehicleVarName 'vehicle_%4_%5';
+vehicle_%4_%5 = this; 
+this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
 [this,'Pickup %1 (%2) (E)','sfg_textures\tags\oil']call tag_add;
-", _name, _amount,_resource];
+", _name, _amount,_resource,round(random 10), round(time)];
 processInitCommands;
+
+
 
 titletext ["Restart the machine it has shut down...", "PLAIN DOWN", 3];
 };

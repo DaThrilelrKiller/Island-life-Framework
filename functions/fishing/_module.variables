@@ -1,16 +1,15 @@
 
 fishing_spots = [];
-fishing_array = [
+fishing_sizes = [
+50,100,120,150,200
+];
+
+fishing_cookable = [
 "fishing_turtle",
 "fish_catfish",
-"fishing_whale",
 "fishing_trout",
 "fishing_bass",
 "fishing_walleye",
 "fishing_mackerel",
 "fishing_herring"
-];
-
-fishing_sizes = [
-50,100,120,150,200
 ];

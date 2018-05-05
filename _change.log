@@ -277,5 +277,14 @@ DaThrillerKiller - Added images for inventory items
 DaThrillerKiller - ATM markers are now created via script
 DaThrillerKiller - New escort funtion togled by pressing U unless you change it threw your settings
 
-
+Version 4.0
+DaThrillerKiller - New Fishing system
+DaThrillerKiller - You can now harvest wood with a axe and use it to make camp fires
+DaThrillerKiller - if you place fish next to a camp fire it will cook over time
+DaThrillerKiller - Fishing location are dynamicly generated,you can fish anywhere just less change of catching that specfic fish
+DaThrillerKiller - added revive option to admin menu
+DaThrillerKiller - Images on items your picking
+DaThrillerKiller - Now when you chop a tree wood is scatterd around and u pick it up
+DaThrillerKiller - Fixed dieing over and over again from hugner systemchat
+DaThrillerKiller - Admin console now auto completes scripts
 

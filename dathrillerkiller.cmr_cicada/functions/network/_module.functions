@@ -15,5 +15,6 @@
 "broadcast",
 "Say3D",
 "log",
-"variable"
+"variable",
+"addAction"
 ];

@@ -16,7 +16,13 @@ for "_i" from 0 to 1 step 0 do
 			};
 		};
 		if (_Zpos >= 0 && {!_grown})then {
-			_x  setvehicleinit "[_x,'Harvet (E)','sfg_textures\tags\Marijuana']call tag_add;";
+			_x  setvehicleinit format ["
+			this setVehicleVarName 'vehicle_%2_%1';
+			vehicle_%2_%1 = this; 
+			[_x,'Harvet (E)','sfg_textures\tags\Marijuana']call tag_add;
+			this addaction ['','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
+			",round(random 10), round(time)];
+			
 			_x setVariable ["grown",true];
 		};
 		

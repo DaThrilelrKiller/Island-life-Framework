@@ -1,5 +1,6 @@
 [
 ["init",false],
 ["water",false],
-["jip",false]
+["jip",false],
+["cook",false]
 ];

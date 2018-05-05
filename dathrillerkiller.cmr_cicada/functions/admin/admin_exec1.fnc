@@ -65,8 +65,8 @@ switch (_text) do
 	};
 	case "Revive": 
 	{
+		call admin_Revive;
 		closeDialog 0;
-		player exec "camera.sqs";
 	};
 
 };

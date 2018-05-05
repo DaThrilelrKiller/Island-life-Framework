@@ -14,7 +14,7 @@ _ass = ["RH_m9sd","15Rnd_9x19_M9SD","RH_g17sd","RH_17Rnd_9x19_g17SD","RH_m1911sd
 
 _mgs = ["RH_mk22","RH_8Rnd_9x19_Mk","KPFS_MP2","KPFS_32Rnd_MP2","RH_muzi","RH_32rnd_9x19_Muzi","RH_uzi","RH_9mm_32RND_Mag","RH_tmpeot","30Rnd_9x19_MP5","RH_fmg9","RH_9mm_32RND_Mag","GPS","NVGoggles","CHRYSLER_B_limmo","tcg_taurus_security", "ilpd_ags_cvpi","chrysler_w_limmo","audi_a8_limo"];
 
-_es = ["Binocular","GPS","NVGoggles","hideout","fishingpole","bunnyhop","drill"];
+_es = ["Binocular","GPS","NVGoggles","hideout","fishing_pole","bunnyhop","drill"];
 
 _cs1 = ["MMT_USMC","Volha_1_TK_CIV_EP1","S1203_TK_CIV_EP1","civic","Car_hatchback","VWGolf","Car_Sedan","SkodaBlue","Skodared","lada1","lada2","LandRover_TK_CIV_EP1","datsun1_civil_3_open","UAZ_Unarmed_TK_CIV_EP1","oldtruck","oltruc3","Tractor","pickup_pk_ins", "ladalm", "skoda", "skodagreen", "lada_base", "lada2_tk_civ_ep1", "landrover_cz_ep1", "lada1_tk_civ_ep1", "ibr_van_civ", "ibr_van_bnk", "baf_offroad_w"];
 
@@ -51,7 +51,15 @@ _qbs = ["cl_quadcarbonlight","cl_quaddescammo","cl_green","cl_quadred","cl_quads
 
 _qbss = ["tcg_aprilia_blue","tcg_aprilia_yellow","tcg_aprilia_white","tcg_aprilia_green","tcg_aprilia_red","tcg_aprilia_black","tcg_aprilia_black_2","tcg_aprilia_blue_2","tcg_aprilia_blue_4","tcg_aprilia_blue_5","tcg_aprilia_cyan","tcg_aprilia_orange","tcg_aprilia_red_1","tcg_aprilia_red_2","tcg_aprilia_white_2","tcg_aprilia_yellow_2","tcg_aprilia_green_3"];
 
-_ts = ["cl_del_mackr","cl_trucktest_mackr","cl_flatbed_mackr","Ural_TK_CIV_EP1","V3S_Open_TK_CIV_EP1","V3S_TK_EP1","UralOpen_CDF","KamazOpen","Ural_CDF","schoolbus","Ikarus_TK_CIV_EP1","Ikarus","v3s_civ", "uralcivil", "uralcivil2", "uralrepair_cdf", "uralrefuel_cdf", "uralreammo_cdf","roadcone"];
+_ts = ["cl_del_mackr","cl_trucktest_mackr","cl_flatbed_mackr","Ural_TK_CIV_EP1","V3S_Open_TK_CIV_EP1","V3S_TK_EP1","UralOpen_CDF","KamazOpen","Ural_CDF","schoolbus","Ikarus_TK_CIV_EP1","Ikarus","v3s_civ", "uralcivil", "uralcivil2", "uralrepair_cdf", "uralrefuel_cdf", "uralreammo_cdf","roadcone","bus",
+"clbuggy",
+"Scania_420",
+"bc_semi_sblk",
+"bc_semi_sblu",
+"bc_semi_sdblue",
+"bc_semi_sylw",
+"bc_semi_sdgry",
+"bc_semi_sorng"];
 
 _sts = [
 "raptor_black",
@@ -532,21 +540,6 @@ _hwpshop =
 "C_DD_DOD12Charger_HWP",
 "C_DD_DOD12Charger_U_HWP",
 "C_DD_CHE08Tahoe_HWP"
-];
-
-
-_rtshop =
-[
-"bus",
-"clbuggy",
-"Scania_420",
-"bc_semi_sblk",
-"bc_semi_sblu",
-"bc_semi_sdblue",
-"bc_semi_sylw",
-"bc_semi_sdgry",
-"bc_semi_sorng",
-"semitrailer"
 ];
  
  
@@ -1205,13 +1198,12 @@ INV_ItemShops = [
 [bikeshop2,["quad","Sports Bike Shop"],dummyobj,bikespawn1,_qbss,_qbss,true,{dtk_civ}],
 [truckshop,["truck","Truck and Bus Shop"],dummyobj,truckspawn,_ts,_ts,true,{dtk_civ}],
 [struckshop,["Car","Sport Truck Shop"],dummyobj,struckspawn,_sts,_sts,true,{dtk_civ}],
-[airshop,["plane","Airplane Shop"],dummyobj,asairspawn,_as,_as,true,{dtk_civ}],
-[airshop2,["heli","Chopper and Jet Shop"],dummyobj,asairspawn2,_assa,_assa,true,{dtk_civ}],
-[airshop3,["plane","Commercial Air Shop"],dummyobj,asairspawn,_asc,_asc,true,{dtk_civ}],
 
 [airshop_1,["plane","Airplane Shop"],dummyobj,asairspawn_1,_as,_as,true,{dtk_civ}],
 [airshop2_1,["heli","Chopper and Jet Shop"],dummyobj,asairspawn2_1,_assa,_assa,true,{dtk_civ}],
 [airshop3_1,["plane","Commercial Air Shop"],dummyobj,asairspawn_1,_asc,_asc,true,{dtk_civ}],
+[scubashop,["Boat","North Boat Shop"],dummyobj,bs1spawn,_bs,_bs,false,{true}],      
+[boatshop2, ["Boat","South Boat Shop"],dummyobj,boatspawn2,_bs,_bs,true,{isciv}],
 
 [insure,["","Insurance"],insure,dummyobj,_ins, _emptyshop,false,{true}],
 [tdoc,["FD","Firefighter I Equipment"],tdoc,tdocspawn,_td4,_td4,true,{FF1_id}],
@@ -1268,7 +1260,6 @@ INV_ItemShops = [
 [copswatvehicle,["SWAT","CIRU Vehicles"],dummyobj,ccarspawnswat,_copswatvehicle,_copswatvehicle,true,{SWAT_id}],
 [ciruairshop,["SWAT","CIRU Air Vehicles"],dummyobj,ciruair,_ciruairs,_ciruairs,true,{SWAT_id}],
 [docshop,["","DOC Shop"],docshop,doccarspawn,_copdoc,_copdoc,true,{DOC_id}],
-[rattlersshop,["","Trucking Shop"],rattlersshop,rattlersspawn,_rtshop,_rtshop,true,{true}],
 [pmcshop,["","PMC Shop"],pmcshop,pmcvspawn,_pmc1,_pmc1,true,{PMC_id}],
 [pmcdivshop,["","PMC Division Shop"],pmcdivshop,pmcvspawn,_pmc2,_pmc2,true,{PMCDivisions_id}],
 [pmccomshop,["","PMC Command Shop"],pmccomshop,pmcvspawn,_pmc3,_pmc3,true,{PMCCommand_id}],

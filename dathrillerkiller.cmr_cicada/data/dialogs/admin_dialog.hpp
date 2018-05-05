@@ -436,7 +436,8 @@ class admin_console
 			y = 0.227987 * safezoneH + safezoneY;
 			w = 0.42393 * safezoneW;
 			h = 0.238011 * safezoneH;
-			autocompete = "scripting";
+			htmlControl = true;
+			autocomplete = "scripting";
 		};
 		class RscListbox_1501: RscListbox
 		{

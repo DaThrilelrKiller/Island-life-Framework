@@ -1,5 +1,6 @@
 _item   = _this select 0; 
 _amount = _this select 1;
+_image = format ["\sfg_textures\items\%1",[_item]call config_image];
 
 
 if(!isnull (nearestobjects[getpos player,["EvMoney","Suitcase"], 1] select 0))exitwith{systemChat  "You cannot drop items on top of each other. move and try again."};
@@ -38,10 +39,19 @@ if ([player,_item,-_amount] call storage_add) then
 	_object setvariable ["droparray", [_amount, _item], true];
 	_name13 = _item call config_displayname;
 	
-	_object  setvehicleinit format["
-	this addaction ['','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight','player distance this < 5 && {!([this,''Pick up %1 (E)'','''']call tag_show)}'];
-	", _name13, _amount,_item,MPID];
+	
+	_object setVehicleInit format [
+	"
+		this setVehicleVarName 'vehicle_%2_%1';
+		vehicle_%2_%1 = this; 
+	"
+	, round(random 10), round(time)];
+	
 	processInitCommands;
+	
+	
+	["ALL",[_object,['','scripts\pickup.sqf',[_object, _item, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up %1 (E)","%2"]call tag_show)}',_name13,_image]]],"network_addAction",false,true]call network_MPExec;
+	
 	
 	} 
 	else 

@@ -19,3 +19,5 @@ private ["_marker","_name","_pos","_size","_marker1"];
 	_marker1 setMarkerSizeLocal _size;
 
 }ForEach _this;
+
+fishing_spots = _this;
