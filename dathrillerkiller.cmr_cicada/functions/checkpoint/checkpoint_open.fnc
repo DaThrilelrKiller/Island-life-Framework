@@ -12,3 +12,5 @@ private ["_config","_cost","_name"];
 	lbAdd[1500,format["Buy %1($%2)",_name,_cost]];
 	true
 }count AM_classnames_total;
+
+true

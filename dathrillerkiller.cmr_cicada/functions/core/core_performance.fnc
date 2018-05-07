@@ -15,17 +15,18 @@ switch(_action)do
 	};
 	
 	case "score":
-	{
+	{ 
 		closeDialog 0;
 		"Performance" hintC [
-		format ["Exec Time: %1",(_this select 3)], 
-		format ["PPS Time: %1",(time - dtk_send_time)], 
+		format ["Exec Time: %1",[(_this select 3),2] call BIS_fnc_cutDecimals], 
+		format ["PPS Time: %1",[(time - dtk_send_time),2] call BIS_fnc_cutDecimals], 
 		format ["Server Uptime: %1",[(serverTime / 60 / 60)] call BIS_fnc_timeToString], 
 		format ["Server Average FPS: %1",round(_this select 1)], 
 		format ["Server Min FPS: %1",round(_this select 2)],
 		format ["Client Uptime: %1",[((time - dtk_jointime) / 60 / 60)] call BIS_fnc_timeToString], 
 		format ["Client Average FPS: %1",round diag_fps],
 		format ["Client Min FPS: %1",round diag_fpsMin],
+		format ["Veiw Distance: %1",viewDistance],
 		format ["Player count: %1",count playableUnits],
 		format ["Entities: %1",count allMissionObjects "ALL"],
 		format ["Groups: %1",count allGroups],

@@ -18,5 +18,6 @@
 "surender",
 "refreshActions",
 "interact",
-"hit"
+"hit",
+"setVarName"
 ];

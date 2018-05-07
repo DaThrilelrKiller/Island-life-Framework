@@ -46,11 +46,6 @@ if (_name in _type2) then
 	";
 	
 }; 
-if (_name in _Halojump)then
-{
-	_vehicle setVehicleInit 'this addAction ["HALO Jump","scripts\jump.sqf",[],1,false,true,"","_this in _target"]'; 
-};
-   
 				
 if (_name == "Ka60_PMC") then
 {

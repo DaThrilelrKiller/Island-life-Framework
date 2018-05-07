@@ -1,4 +1,4 @@
-if (isServer) exitWith {};
+if (dtk_server) exitWith {};
 private ["_sirnobj","_sleep","_type"];
 
 _sirnobj = _this;

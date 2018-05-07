@@ -6,4 +6,4 @@ private ["_marker"];
 	_marker setMarkerColorLocal "colorBlack";
 	_marker setMarkerTextlocal "Performance Shop";
 	_marker setMarkerAlphaLocal 1;
-}ForEach (nearestobjects [getpos BuildingCollapesLogic, ["Land_House_C_12_EP1"], 20000]);
+}ForEach (nearestobjects [dtk_center, ["Land_House_C_12_EP1"], 5125]);

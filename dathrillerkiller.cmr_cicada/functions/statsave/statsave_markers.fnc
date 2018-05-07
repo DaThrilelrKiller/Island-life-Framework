@@ -8,5 +8,5 @@ if (dtk_client)then {
 		_marker setMarkerTextlocal "Vehicle Save Point";
 		_marker setMarkerAlphaLocal 1;
 		v_save_locs set [count v_save_locs,_marker];
-	}ForEach (nearestobjects [getpos BuildingCollapesLogic, ["Land_Ind_Garage01_EP1"], 20000]); 
+	}ForEach (nearestobjects [dtk_center, ["Land_Ind_Garage01_EP1"], 5125]); 
 };

@@ -33,4 +33,4 @@ _locations = [];
 		_marker setMarkerAlphaLocal 1;
 		v_oil_loc set [count v_oil_loc,_marker];
 	};
-}ForEach (nearestobjects [getpos BuildingCollapesLogic, ["Land_Ind_Oil_Pump_EP1","Land_Ind_Oil_Tower_EP1"], 20000]);
+}ForEach (nearestobjects [dtk_center, ["Land_Ind_Oil_Pump_EP1","Land_Ind_Oil_Tower_EP1"], 5125]);

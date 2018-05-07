@@ -94,8 +94,8 @@ if (_art == "gesetz") then
 	{
 		_index = lbAdd [1, _x];
 		lbSetData [1, _index, _x];
-	}
-	count GesetzArray;
+	}count GesetzArray;
+	
 	while {ctrlVisible 1020} do 
 	{
 		_selected = lbCurSel 1;

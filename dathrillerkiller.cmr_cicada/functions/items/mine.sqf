@@ -68,13 +68,12 @@ _object setvariable ["droparray", [_amount, _resource], true];
 };
 };
 
-_object  setvehicleinit format["
-this setVehicleVarName 'vehicle_%4_%5';
-vehicle_%4_%5 = this; 
-this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
-[this,'Pickup %1 (%2) (E)','sfg_textures\tags\oil']call tag_add;
-", _name, _amount,_resource,round(random 10), round(time)];
-processInitCommands;
+_object call core_setVarName;
+	
+["ALL",[_object,['','scripts\pickup.sqf',[_object, _resource, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up %1 (E)","%2"]call tag_show)}',_name,"sfg_textures\tags\oil"]]],"network_addAction",false,true]call network_MPExec;
+	
+
+
 
 
 

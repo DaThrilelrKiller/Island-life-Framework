@@ -140,8 +140,8 @@ class RscFrame
   h = 1.0;
   sizeEx = Dlg_TEXTHGT;
   
-  colorBackground[] = {Dlg_ColorScheme_Red, 1}; // unused?
-  colorText[] = {Dlg_ColorScheme_Yellow, 1}; // unused?
+  colorBackground[] = {Dlg_ColorScheme_Red, 1}; 
+  colorText[] = {Dlg_ColorScheme_Yellow, 1}; 
   font = FontM_R;
 
   text = "";

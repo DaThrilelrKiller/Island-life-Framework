@@ -1,4 +1,4 @@
-private ["_i","_Zpos","_nubofPlants","_sleep"];
+private ["_i","_Zpos","_nubofPlants","_sleep","_config"];
 for "_i" from 0 to 1 step 0 do 
 {
 	_nubofPlants = count ((allMissionObjects "as_p_fiberPlant_EP1") + (allMissionObjects "as_b_PinusM1s_EP1") + (allMissionObjects "as_b_PistaciaL1s_EP1"));
@@ -16,12 +16,12 @@ for "_i" from 0 to 1 step 0 do
 			};
 		};
 		if (_Zpos >= 0 && {!_grown})then {
-			_x  setvehicleinit format ["
-			this setVehicleVarName 'vehicle_%2_%1';
-			vehicle_%2_%1 = this; 
-			[_x,'Harvet (E)','sfg_textures\tags\Marijuana']call tag_add;
-			this addaction ['','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
-			",round(random 10), round(time)];
+		
+			_config = _x call s_drugs_config;
+
+			_x call core_setVarName;
+				
+			["ALL",[_x,['','noscript.sqf',format ['[%1,"%2","%3"]call drug_harvest',_x,(_config select 0),(_config select 1)],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Harvest Plant (E)","%2"]call tag_show)}',"","sfg_textures\tags\Marijuana"]]],"network_addAction",false,false]call network_MPExec;
 			
 			_x setVariable ["grown",true];
 		};

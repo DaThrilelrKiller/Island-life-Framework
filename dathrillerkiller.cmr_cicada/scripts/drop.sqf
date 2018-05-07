@@ -39,15 +39,7 @@ if ([player,_item,-_amount] call storage_add) then
 	_object setvariable ["droparray", [_amount, _item], true];
 	_name13 = _item call config_displayname;
 	
-	
-	_object setVehicleInit format [
-	"
-		this setVehicleVarName 'vehicle_%2_%1';
-		vehicle_%2_%1 = this; 
-	"
-	, round(random 10), round(time)];
-	
-	processInitCommands;
+	_object call core_setVarName;	
 	
 	
 	["ALL",[_object,['','scripts\pickup.sqf',[_object, _item, _amount],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Pick up %1 (E)","%2"]call tag_show)}',_name13,_image]]],"network_addAction",false,true]call network_MPExec;

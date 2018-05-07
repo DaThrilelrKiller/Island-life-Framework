@@ -306,8 +306,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8020.4883,321.65268,2922.2908};
-					azimut=481.75641;
+					position[]={6258.1592,32.207603,4437.9863};
+					azimut=630.96472;
 					id=13;
 					side="LOGIC";
 					vehicle="Logic";
@@ -5680,8 +5680,8 @@ class Mission
 		};
 		class Item196
 		{
-			position[]={8013.6221,320.61591,2899.4207};
-			azimut=-179.01392;
+			position[]={8012.5488,19,4664.9155};
+			azimut=-269.39951;
 			id=312;
 			side="EMPTY";
 			vehicle="tcg_atm";
@@ -5994,8 +5994,8 @@ class Mission
 		};
 		class Item223
 		{
-			position[]={8011.8804,323.39569,2929.5146};
-			azimut=-3.8943498;
+			position[]={6271.3115,32.32827,4437.4194};
+			azimut=-1.4053186;
 			id=351;
 			side="EMPTY";
 			vehicle="Infostand_2_EP1";
@@ -8981,12 +8981,12 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={8011.6978,323.40579,2929.4709};
+			position[]={6271.1245,32.32827,4437.3838};
 			name="struckshop";
 			text="Sport Truck Shop";
 			type="mil_box";
 			colorName="ColorBlue";
-			angle=174.64178;
+			angle=177.13087;
 		};
 		class Item24
 		{

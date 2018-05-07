@@ -5,6 +5,7 @@ MayorSteuern             = 0;
 dtk_jointime = time;
 core_loop_array = [];
 dtk_action_time = 0;
+dtk_center = [5125,5125,0];
 
 ar_paychecks = 
 [

@@ -41,13 +41,8 @@ if ((player distance getmarkerpos "forest" < 175) or (player distance getmarkerp
 			for "_i" from 0 to _amountchopped step 1 do 
 			{
 				_object = "cl_wood" createVehicle getPos player;
-				_object  setvehicleinit format["
-				this setVehicleVarName 'vehicle_%4_%5';
-				vehicle_%4_%5 = this; 
-				this addaction ['Pickup %1 (%2)','scripts\pickup.sqf',[this, '%3', %2],25,false,true,'LeanRight'];
-				[this,'Pickup %1 (%2) (E)','sfg_textures\items\lummber']call tag_add;
-				", "Wood", 1,"wood",round(random 10), round(time)];
-				processInitCommands;
+				_object call core_setVarName;	
+				["ALL",[_object,['','scripts\pickup.sqf',[_object, "wood", 1],25,false,true,'LeanRight',format ['!([_target,"Pick up %1 (E)","%2"]call tag_show)',"Wood","sfg_textures\items\lummber"]]],"network_addAction",false,true]call network_MPExec;
 			};
 			
 			

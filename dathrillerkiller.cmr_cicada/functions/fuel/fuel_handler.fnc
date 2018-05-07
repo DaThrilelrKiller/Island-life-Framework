@@ -28,5 +28,5 @@ while {((fuel _vehicle) < 0.99)} do
 };
 
 systemChat format ["you have refueled the vehicle %1%",round(fuel _Vehicle * 100)];
-
+cutText ["test","PLAIN DOWN",64439];
 publicvariable "v_fuel_cost";

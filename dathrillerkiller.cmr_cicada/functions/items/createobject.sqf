@@ -20,7 +20,7 @@ _obj = _class createvehicle [0, 0, 0];
 _obj setdir getdir player;
 _obj setpos _pos;
 _time = round time;
-call compile format['_obj setvehicleinit "this setvehiclevarname ""%1%2%3""; %1%2%3 = this"; processinitcommands', player, _class, _time];
+_obj call core_setVarName;	
 _counter = 0;
 
 };

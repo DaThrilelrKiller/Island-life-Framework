@@ -1,5 +1,5 @@
-if !(SwagDevs) exitWith {};
-if (dialog)exitWith {closeDialog 0};
+if !(SwagDevs) exitWith {true};
+if (dialog)exitWith {closeDialog 0; true};
 
 createDialog "admin_console";
 admin_selected = 2;
@@ -8,3 +8,5 @@ call admin_load;
 
 
 []call admin_console_recents;
+
+true
