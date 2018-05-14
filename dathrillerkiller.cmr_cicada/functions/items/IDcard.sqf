@@ -44,7 +44,7 @@ _dob = _ui displayCtrl 1401;
 
 _background ctrlSetText format["sfg_textures\Faces\%1ID.paa",_PlayerSide];
 _FaceUI ctrlSetText format["sfg_textures\Faces\%1.pac",_Face];
-_Name ctrlSetText format["%1 (%2)",name _art,_art];
+_Name ctrlSetText format["%1",name _art];
 _Idnum ctrlSetText format["%1",getPlayerUID _art];
 _rank ctrlSetText format["%1","n/a"];
 _dob ctrlSetText format["%1 %2 %3",_Month,_Day,_Year];

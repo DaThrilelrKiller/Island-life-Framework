@@ -5,6 +5,7 @@ dtk_active_modules =
 [
 "Network",
 "Core",
+"Action",
 "Keypress",
 "Config",
 "Array",
@@ -24,6 +25,7 @@ dtk_active_modules =
 "Cdb",
 "Plates",
 "Cuffs",
+"Dog",
 "Holster",
 "String",
 "Shipment",
@@ -52,7 +54,8 @@ dtk_active_modules =
 "Hud",
 "Spawn",
 "Tag",
-"Fishing"
+"Fishing",
+"Flashbang"
 ];
 
 /*loads variables first for all active modules*/

@@ -1,5 +1,6 @@
 [
 "plate",
 "setplate",
-"plateToVehicle"
+"plateToVehicle",
+"init"
 ];

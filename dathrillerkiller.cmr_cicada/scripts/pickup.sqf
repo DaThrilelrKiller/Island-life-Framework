@@ -18,10 +18,10 @@ _amount     = _this select 2;
 _exitvar    = 0;
 _time       = round time;
 
-if ((_ownweight + _itemweight) > INV_Tragfaehigkeit) then 
+if ((_ownweight + _itemweight) > dtk_player_storage) then 
 { 
 
-_amount = (floor((INV_Tragfaehigkeit - _ownweight) / (_infos call config_weight)));
+_amount = (floor((dtk_player_storage - _ownweight) / (_infos call config_weight)));
 
 if (_amount <= 0) exitWith {systemChat  localize "STRS_inv_buyitems_maxgewicht"; _exitvar = 1;pickingup = false;};
 

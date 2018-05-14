@@ -66,7 +66,8 @@ class Mission
 		"castructures_e_ind_oil_mine",
 		"castructures_e_ind_ind_garage01",
 		"castructures_e_housec",
-		"il_f350sheriff"
+		"il_f350sheriff",
+		"caweapons_e"
 	};
 	addOnsAuto[]=
 	{
@@ -126,6 +127,7 @@ class Mission
 		"castructures_e_ind_oil_mine",
 		"castructures_e_ind_ind_garage01",
 		"castructures_e_housec",
+		"caweapons_e",
 		"cmr_cicada"
 	};
 	randomSeed=4744745;
@@ -3570,7 +3572,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=476;
+		items=480;
 		class Item0
 		{
 			position[]={2662.2717,230,2716.7444};
@@ -8759,6 +8761,45 @@ class Mission
 			skill=0.60000002;
 			text="scubashop";
 			init=" this allowdamage false; this enableSimulation false";
+		};
+		class Item476
+		{
+			position[]={6310.9102,13.358904,3972.8279};
+			id=639;
+			side="EMPTY";
+			vehicle="SearchLight_US_EP1";
+			skill=0.60000002;
+			text="test";
+		};
+		class Item477
+		{
+			position[]={7323.394,15.959297,4941.7056};
+			azimut=-92.349846;
+			id=640;
+			side="EMPTY";
+			vehicle="SearchLight_US_EP1";
+			skill=0.60000002;
+			text="test_1";
+		};
+		class Item478
+		{
+			position[]={5357.9351,29.486488,2481.2615};
+			azimut=123.91405;
+			id=641;
+			side="EMPTY";
+			vehicle="SearchLight_US_EP1";
+			skill=0.60000002;
+			text="test_2";
+		};
+		class Item479
+		{
+			position[]={6745.4531,48.954338,2791.2998};
+			azimut=9.2402802;
+			id=642;
+			side="EMPTY";
+			vehicle="SearchLight_US_EP1";
+			skill=0.60000002;
+			text="test_3";
 		};
 	};
 	class Markers

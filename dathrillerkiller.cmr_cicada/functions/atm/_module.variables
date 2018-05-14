@@ -3,3 +3,4 @@ atm_running = false;
 bank_limit		 = 25000000;
 local_useBankPossible    = true;
 dtk_atms = (nearestobjects [dtk_center, ["tcg_ATM"], 5125]);
+dtk_player_storage = 60;

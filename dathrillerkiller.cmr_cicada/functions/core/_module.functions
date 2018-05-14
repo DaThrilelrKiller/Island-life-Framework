@@ -16,7 +16,6 @@
 "convertBoolean",
 "removeEventHandlers",
 "surender",
-"refreshActions",
 "interact",
 "hit",
 "setVarName"

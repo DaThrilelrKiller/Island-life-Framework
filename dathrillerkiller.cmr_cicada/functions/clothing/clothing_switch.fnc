@@ -1,4 +1,4 @@
-private ["_oldplayer","_oldweapons","_oldmags","_score","_rank","_damage","_skin","_pos","_skinsold","_group","_to_become","_var_name"];
+private ["_oldplayer","_oldweapons","_oldmags","_score","_rank","_damage","_skin","_pos","_skinsold","_group","_to_become","_var_name","_camera"];
 
 	_oldplayer = player;
 	_oldweapons = weapons _oldplayer;
@@ -12,6 +12,7 @@ private ["_oldplayer","_oldweapons","_oldmags","_score","_rank","_damage","_skin
 	_license = player getVariable ['cdb_license',[]];
 	_notes = player getVariable ['cdb_notes',[]];
 	_bounty = player getVariable ['cdb_bounty',0];
+	_camera = cameraView;
 	call TFAR_RemoveRadios;
 
 if (_skinsold != _skin) then {
@@ -30,6 +31,8 @@ if (_skinsold != _skin) then {
 	addSwitchableUnit _to_become;
 	titleCut["", "BLACK in",2];
 	selectPlayer _to_become;
+	
+	_to_become switchCamera _camera;
 	waitUntil {typeOf player == _skin};
 	waitUntil {isPlayer _to_become};
 	player removeWeapon "ItemRadio";
@@ -37,7 +40,6 @@ if (_skinsold != _skin) then {
 	[_oldplayer] call clothing_delete;
 	removeAllWeapons _to_become;
 	[player]call core_removeEventHandlers;
-	player addEventHandler ["fired",{_this execVM "scripts\fired.sqf"}];
 	player addEventHandler ["handleDamage", {_this call events_sethit}];
 	player addEventHandler ["respawn", {_this call setup_respawn; _this}]; 
 	player setPosATL _pos;

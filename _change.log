@@ -277,7 +277,7 @@ DaThrillerKiller - Added images for inventory items
 DaThrillerKiller - ATM markers are now created via script
 DaThrillerKiller - New escort funtion togled by pressing U unless you change it threw your settings
 
-Version 4.0
+Version 4.1
 DaThrillerKiller - New Fishing system
 DaThrillerKiller - You can now harvest wood with a axe and use it to make camp fires
 DaThrillerKiller - if you place fish next to a camp fire it will cook over time
@@ -288,3 +288,21 @@ DaThrillerKiller - Now when you chop a tree wood is scatterd around and u pick i
 DaThrillerKiller - Fixed dieing over and over again from hugner systemchat
 DaThrillerKiller - Admin console now auto completes scripts
 
+Version 4.2
+DaThrillerKiller - Fixed spawn menu camera
+DaThrillerKiller - 3D interaction tag
+DaThrillerKiller - Optimization
+
+Version 4.3 
+DaThrillerKiller - New Acttion_add function 
+DaThrillerKiller - New Dog functions
+DaThrillerKiller - Fixed flashbangs
+DaThrillerKiller - New crimnal Database UI, you now search for player name instead of "Civ4"
+DaThrillerKiller - Made swithing clothes a bit more smooth
+DaThrillerKiller - Fixed steriods not working to increase weight
+DaThrillerKiller - Made it so id cards only show name and not civ#
+DaThrillerKiller - if you dont pick a birthday and picture, it will automaticly generate one for you
+DaThrillerKiller - Licence plates are now on by default toogle with f4 menu 
+DaThrillerKiller - fixed civilains having request backup option
+DaThrillerKiller - added Side switch detection
+DaThrillerKiller - 

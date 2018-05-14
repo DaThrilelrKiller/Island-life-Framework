@@ -4,12 +4,23 @@ lbClear 2;
 lbClear 3;
 lbClear 4;
 
-cdb_object = [call compile(CtrlText 1),(CtrlText 1)call plates_plateToVehicle]select (isNil format ["%1",CtrlText 1]);
+cdb_object = (CtrlText 1) call core_nametoplayer;
+cdb_object = if (isNil "cdb_object")then {(CtrlText 1)call plates_plateToVehicle}else{cdb_object};
 
-if (isNil "cdb_object" or {isNull cdb_object})exitWith {systemchat "Nothing Found in Database";};
+if (isNil "cdb_object" or {isNull cdb_object})exitWith {
+_index = lbadd [2, format ["Nothing found in Database for: %1",(CtrlText 1)]];
+lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
+systemchat "Nothing Found in Database";
+};
+
+
 systemchat format ["Searching Database For: %1",cdb_object call cdb_name];
 if !(isPlayer cdb_object)then{
-systemchat format ["Vehicle Is Registered To: %1",((cdb_object getVariable "DTK_OwnerUID") select 3)];
+	_data = (cdb_object getVariable "DTK_OwnerUID");
+	_index = lbadd [2, format ["Vehicle Is Registered To: %1",(_data select 3)]];
+	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
+	_index = lbadd [2, format ["Type: %1",(_data select 1)call config_displayname]];
+	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
 };
 
 _warrants = cdb_object getVariable ["cdb_warrants",[]];
@@ -30,8 +41,8 @@ if (count _warrants > 0)then
 if (count _license > 0)then
 {
 	{
-		_index = lbAdd [3,format["License: %1",_x call licenses_name]];
-		lbSetColor [3,_index,[0.23,0.34,0.98, 1]];
+		_index = lbAdd [2,format["License: %1",_x call licenses_name]];
+		lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
 	}count _license;
 }
 else
@@ -43,12 +54,12 @@ else
 if (count _notes > 0)then
 {
 	{
-		_index = lbAdd [4,format['Note: %1 - By %2', (_x select 0),(_x select 1)]];
-		lbSetColor [4,_index,[0.23,0.34,0.98, 1]];
+		_index = lbAdd [2,format['Note: %1 - By %2', (_x select 0),(_x select 1)]];
+		lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
 	}count _notes;
 }
 else
 {
-	_index = lbadd [4, 'No Notes Found'];
-	lbSetColor [4,_index,[0.23,0.34,0.98, 1]];
+	_index = lbadd [2, 'No Notes Found'];
+	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];
 };

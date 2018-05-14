@@ -87,96 +87,92 @@ class cdb_note{
 };
 
 
-class cdb_search{
+
+class cdb_search
+{
 	idd=-1;
 	moveEnable = false;
 	enableSimulation = true;
-	onLoad = "['iscop','D0005']spawn ANTIHACK_DialogCheck;";
 	onUnLoad = "cdb_object = nil;";
-	class controlsBackground 
+	
+	class ControlsBackground
 	{
-		class RscPicture_1201: RscPicture
+		class RscPicture_1201 : RscPicture 
 		{
 			idc = 1201;
+			x = 0.164844*safezoneW+safezoneX;
+			y = 0.049*safezoneH+safezoneY;
+			w = 1.14984*safezoneW;
+			h = 0.913*safezoneH;
 			text = "sfg_textures\ipad\PoliceComputer.paa";
-			x = 0.164844 * safezoneW + safezoneX;
-			y = 0.049 * safezoneH + safezoneY;
-			w = 1.14984 * safezoneW;
-			h = 0.913 * safezoneH;
+			
 		};
+		
 	};
-	class controls 
+	class Controls
 	{
-
-		class Submit_Warants: Swag_RscButton
+		class Submit_Warants : Swag_RscButton 
 		{
 			idc = 1600;
-			x = 0.206094 * safezoneW + safezoneX;
-			y = 0.214 * safezoneH + safezoneY;
-			w = 0.12375 * safezoneW;
-			h = 0.044 * safezoneH;
+			x = 0.206094*safezoneW+safezoneX;
+			y = 0.214*safezoneH+safezoneY;
+			w = 0.12375*safezoneW;
+			h = 0.044*safezoneH;
 			action = "createDialog 'cdb_warrant'";
+			
 		};
-		class Submit_Notes: Swag_RscButton
+		class Submit_Notes : Swag_RscButton 
 		{
 			idc = 1601;
-			x = 0.206094 * safezoneW + safezoneX;
-			y = 0.269 * safezoneH + safezoneY;
-			w = 0.12375 * safezoneW;
-			h = 0.044 * safezoneH;
+			x = 0.206094*safezoneW+safezoneX;
+			y = 0.269*safezoneH+safezoneY;
+			w = 0.12375*safezoneW;
+			h = 0.044*safezoneH;
 			action = "createDialog 'cdb_note'";
+			
 		};
-		class Clear_Warrants: Swag_RscButton
+		class Clear_Warrants : Swag_RscButton 
 		{
 			idc = 1602;
-			x = 0.206094 * safezoneW + safezoneX;
-			y = 0.335 * safezoneH + safezoneY;
-			w = 0.12375 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.206094*safezoneW+safezoneX;
+			y = 0.335*safezoneH+safezoneY;
+			w = 0.12375*safezoneW;
+			h = 0.033*safezoneH;
 			action = "cdb_object call cdb_clear_warrants;";
+			
 		};
-		class Search_box: RscEdit
+		class Search_box : RscEdit 
 		{
 			idc = 1;
-			x = 0.579427 * safezoneW + safezoneX;
-			y = 0.108519 * safezoneH + safezoneY;
-			w = 0.182396 * safezoneW;
-			h = 0.0292963 * safezoneH;
-			colorText[] = {0.23,0.34,0.98, 1};
+			x = 0.579427*safezoneW+safezoneX;
+			y = 0.108519*safezoneH+safezoneY;
+			w = 0.182396*safezoneW;
+			h = 0.0292963*safezoneH;
+			colorBackground[] = {0.7294,0.6,0.5804,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorText[] = {0.23,0.34,0.98,1};
+			
 		};
-		class Search_Button: Swag_RscButton
+		class Search_Button : Swag_RscButton 
 		{
 			idc = 1603;
-			x = 0.762969 * safezoneW + safezoneX;
-			y = 0.104 * safezoneH + safezoneY;
-			w = 0.0309375 * safezoneW;
-			h = 0.033 * safezoneH;
+			x = 0.762969*safezoneW+safezoneX;
+			y = 0.104*safezoneH+safezoneY;
+			w = 0.0309375*safezoneW;
+			h = 0.033*safezoneH;
 			action = "[ctrltext 1] call cdb_search;";
+			
 		};
-		class Active_Warrants: RscListbox
+		class Active_Warrants : RscListBox 
 		{
 			idc = 2;
-			x = 0.381406 * safezoneW + safezoneX;
-			y = 0.214 * safezoneH + safezoneY;
-			w = 0.407344 * safezoneW;
-			h = 0.132 * safezoneH;
+			x = safeZoneX + safeZoneW * 0.38125;
+			y = safeZoneY + safeZoneH * 0.21444445;
+			w = safeZoneW * 0.4075;
+			h = safeZoneH * 0.52333334;
+			colorDisabled[] = {0.2,0.2,0.2,1};	
 		};
-		class Active_Notes: RscListbox
-		{
-			idc = 4;
-			x = 0.381406 * safezoneW + safezoneX;
-			y = 0.412 * safezoneH + safezoneY;
-			w = 0.407344 * safezoneW;
-			h = 0.132 * safezoneH;
-		};
-		class Licences: RscListbox
-		{
-			idc = 3;
-			x = 0.381406 * safezoneW + safezoneX;
-			y = 0.61 * safezoneH + safezoneY;
-			w = 0.407344 * safezoneW;
-			h = 0.132 * safezoneH;
-		};
-
+		
 	};
+	
 };

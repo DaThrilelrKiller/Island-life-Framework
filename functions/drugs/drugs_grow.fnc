@@ -20,8 +20,7 @@ for "_i" from 0 to 1 step 0 do
 			_config = _x call s_drugs_config;
 
 			_x call core_setVarName;
-				
-			["ALL",[_x,['','noscript.sqf',format ['[%1,"%2","%3"]call drug_harvest',_x,(_config select 0),(_config select 1)],25,false,true,'LeanRight',format ['player distance _target < 5 && {!([_target,"Harvest Plant (E)","%2"]call tag_show)}',"","sfg_textures\tags\Marijuana"]]],"network_addAction",false,false]call network_MPExec;
+			["ALL",["player",['','noscript.sqf',format ['[%1,"%2","%3"]call drug_harvest',_x,(_config select 0),(_config select 1)],25,false,true,'LeanRight',format ['player distance %3 < 5 && {!([%3,"Harvest Plant (E)","%2"]call tag_show)}',"","sfg_textures\tags\Marijuana",_x]]],"network_addAction",false,false]call network_MPExec;
 			
 			_x setVariable ["grown",true];
 		};

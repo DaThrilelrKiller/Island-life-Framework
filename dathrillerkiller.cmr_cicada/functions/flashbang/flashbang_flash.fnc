@@ -1,14 +1,11 @@
-_pos = _this select 0;
+_bullet = _this select 0;
 _timenow = time;
 
-while {!isNull _bullet and ((velocity _bullet)select 0 > 0)} do
-{
-
-};
+waitUntil {(velocity _bullet)select 0 == 0};
 
 if ((player distance _bullet) < 11)then
 {
-	while{time < (_timenow + 10) || (!(isnull _pos))}do
+	while{time < (_timenow + 10)}do
 	{
 		if (not(alive player)) exitWith {};
 		2 cutText ["","WHITE OUT",0];

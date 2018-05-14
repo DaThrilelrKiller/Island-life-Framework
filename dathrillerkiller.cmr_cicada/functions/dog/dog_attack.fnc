@@ -1,4 +1,4 @@
-
+private ["_target","_dog","_sound"];
 
 _target = _this select 0;
 _dog = player getVariable "CLAY_DogUnit";

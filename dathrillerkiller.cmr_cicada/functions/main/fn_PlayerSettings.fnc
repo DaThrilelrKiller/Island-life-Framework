@@ -23,10 +23,10 @@ _Year = [1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1
 	lbSetData [5005, _index, _x];
 }count _Months;
 
-lbSetCurSel [5004, 0];
-lbSetCurSel [5006, 0];
-lbSetCurSel [5007, 0];
-lbSetCurSel [5005, 0];
+lbSetCurSel [5004, round random (count _Faces)];
+lbSetCurSel [5006, round random (count _Days)];
+lbSetCurSel [5007, round random (count _Year)];
+lbSetCurSel [5005, round random (count _Months)];
 
 []spawn
 {

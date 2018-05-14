@@ -26,7 +26,8 @@ _array =
 	["Main", "lifestate",""],
 	["Main", "distance",800],
 	["Main", "detail",50],
-	[_side, "seasion",[]]
+	[_side, "seasion",[]],
+	["Main", "Side",""]
 ];
 
 _data = [_uid];
@@ -40,4 +41,4 @@ _data = [_uid];
 	true
 }count _array;
 
-[_player,_data,"statsave_loadacount",false,false]call network_MPExec;
+[_player,_data,"statsave_loadacount",false,true]call network_MPExec;

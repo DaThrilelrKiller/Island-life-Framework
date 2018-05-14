@@ -13,5 +13,6 @@
 "isNumber",
 "dropall",
 "RemoveKind",
-"seach"
+"seach",
+"watch"
 ];

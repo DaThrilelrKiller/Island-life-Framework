@@ -11,4 +11,4 @@ publicVariable "INV_ServerBuildingArray";
 
 server_auth = true;
 publicVariable "server_auth";
-diag_log "[LOG] SFG Island Life Has Loaded";
+diag_log text "[LOG]Initialization finished!";

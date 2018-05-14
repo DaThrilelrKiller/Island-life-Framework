@@ -34,7 +34,7 @@ switch(_itemtype)do
 	case "Item":
 	{
 		_invspace   = [player]call storage_kg;
-		_menge = (floor((INV_Tragfaehigkeit - _invspace) / (_info call config_weight)));	
+		_menge = (floor((dtk_player_storage - _invspace) / (_info call config_weight)));	
 		if (_menge <= 0) exitWith {
 			systemChat  localize "STRS_inv_buyitems_maxgewicht"; 
 			_return = false;

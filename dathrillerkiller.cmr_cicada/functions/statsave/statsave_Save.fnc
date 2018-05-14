@@ -19,7 +19,8 @@ _save =
 		[dtk_side, "INV_PrivateStorage",INV_PrivateStorage],
 		[dtk_side, "INVAppsInstalled",INVAppsInstalled],
 		["Main", "lifestate", (lifeState player)],
-		[dtk_side, "seasion", [s_seasion,time,getPos player]]
+		[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],
+		["Main", "Side", dtk_side]
 	]
 ];
 

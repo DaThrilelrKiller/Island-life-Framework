@@ -41,9 +41,7 @@ HideoutLocationArray = HideoutLocationArray - [hideout%1%2];
 [player,""hideout"",1] call storage_add;
 ",1,false,true,"","player distance hideout%1%2 <= 7"];
 
-%1%2localhideoutmarker = (([hideout%1%2, (localize "STRS_hideout_marker"), "Camp", "ColorWhite", "ICON", [1, 1], "%1%2HideoutMarker"] call ISSE_CreateMarkerArray) select 1);									
-"if (local server) then {publichideoutarray = publichideoutarray + [ [""%1"", [hideoutbox%1%2,hideout%1%2,hideoutfire%1%2] ] ]}" call network_broadcast;
-																											
+%1%2localhideoutmarker = (([hideout%1%2, (localize "STRS_hideout_marker"), "Camp", "ColorWhite", "ICON", [1, 1], "%1%2HideoutMarker"] call ISSE_CreateMarkerArray) select 1);																																	
 ',rolestring, round(time), _pos, _roledir];																																			
 																			
 [player,_item,-1] call storage_add;

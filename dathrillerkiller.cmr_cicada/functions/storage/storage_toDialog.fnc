@@ -5,6 +5,8 @@ _object = _this select 1;
 _showdrap = _this select 2;
 _array = _object getVariable ["dtk_storage",[[],[]]];
 
+lbClear _idc;
+
 _arrayitems = _array select 0;
 _arrayamount = _array select 1;
 

@@ -101,8 +101,7 @@ dtk_disabledkeys = [44,47];
 
 
 (format ["%1 switchmove ""%2"";", player, "normal"]) call network_broadcast;
-call INV_EntferneIllegales;	
-local_arrest    = 1;		
+call INV_EntferneIllegales;		
 dtk_hunger      = 0;					
 CivTimeInPrison = (_this select 1);
 systemChat  format [localize "STRS_civmenucheck_arrested_self", (CivTimeInPrison call string_intToString)];
@@ -143,7 +142,7 @@ if ((_exitart == "frei") or (_exitart == "freigelassen")) then
 	{
 
 	player setPos getMarkerPos "jail_freemarker";	player setdamage 0;	
-	(format ["if (player == %1) then {local_arrest = 0; systemChat  localize ""STRS_civmenucheck_free_self"";}; systemChat format [localize ""STRS_civmenucheck_free_global"", name %1];", player]) call network_broadcast;
+	(format ["if (player == %1) then { systemChat  localize ""STRS_civmenucheck_free_self"";}; systemChat format [localize ""STRS_civmenucheck_free_global"", name %1];", player]) call network_broadcast;
 	player call cdb_clear_warrants;
 	[ar_typeofplayer] call clothing_switch;
 	dtk_disabledkeys = [];
@@ -153,7 +152,7 @@ if (_exitart == "ausbruch") then
 
 	{
 
-	(format ["if (player == %1) then {local_arrest = 0;}; %1_arrest = 0; systemChat format [localize ""STRS_civmenucheck_breakout"", name %1];", player]) call network_broadcast;								
+	(format ["%1_arrest = 0; systemChat format [localize ""STRS_civmenucheck_breakout"", name %1];", player]) call network_broadcast;								
 	[player,"escaping from jail",20000]call cdb_addWarrant;
 	dtk_disabledkeys = [];
 	};
