@@ -12,7 +12,8 @@ dtk_server_modules =
 "Gang",
 "Impound",
 "Core",
-"Fishing"
+"Fishing",
+"Accidents"
 ];
 
 /*loads variables first for all active modules*/

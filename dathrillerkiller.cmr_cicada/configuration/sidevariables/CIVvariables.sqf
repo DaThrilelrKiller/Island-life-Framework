@@ -8,9 +8,6 @@ ar_side = "CIV";
 
 /*DaThrillerKiller*/
 USBW_Interactions = [
-["'Harvest Marijuana'",'"as_p_fiberPlant_EP1"call drug_neardrug','[(nearestobjects [getpos player, ["as_p_fiberPlant_EP1"], 5] select 0),"MarijuanaSeed","Unprocessed_Marijuana"]call drug_harvest;'],
-["'Harvest Poppy'",'"as_b_PinusM1s_EP1"call drug_neardrug','[(nearestobjects [getpos player, ["as_b_PinusM1s_EP1"], 5] select 0),"HeroinSeed","Unprocessed_Heroin"]call drug_harvest;'],
-["'Harvest Cocaine'",'"as_b_PistaciaL1s_EP1"call drug_neardrug','[(nearestobjects [getpos player, ["as_b_PistaciaL1s_EP1"], 5] select 0),"CocaineSeed","Unprocessed_Cocaine"]call drug_harvest;'],
 ["'Enable License Plate'",'!ar_plates','[]spawn plates_plate'],
 ["'Disable License Plate'",'ar_plates','[]spawn plates_plate']
 ];

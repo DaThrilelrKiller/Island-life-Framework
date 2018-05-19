@@ -1,0 +1,1 @@
+[player]call action_addAll;

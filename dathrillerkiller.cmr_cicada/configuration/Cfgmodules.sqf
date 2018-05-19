@@ -55,7 +55,8 @@ dtk_active_modules =
 "Spawn",
 "Tag",
 "Fishing",
-"Flashbang"
+"Flashbang",
+"Lightbar"
 ];
 
 /*loads variables first for all active modules*/
@@ -85,3 +86,5 @@ call setup_init;
 if (dtk_client)then {
 ["ALL",[player,dtk_side,getPlayerUID player],"setup_jip",false,true]call network_MPExec;
 };
+
+endLoadingScreen;

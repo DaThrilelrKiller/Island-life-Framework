@@ -68,5 +68,9 @@ switch (_text) do
 		call admin_Revive;
 		closeDialog 0;
 	};
+	case "Server Info": 
+	{
+		 serverCommand '#restart';
+	};
 
 };

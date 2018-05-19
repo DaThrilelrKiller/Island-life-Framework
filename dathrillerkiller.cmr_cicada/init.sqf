@@ -15,7 +15,7 @@ if (isNil "server_auth" && {dtk_client})then {
 	systemchat "Server authentication finished";
 };
 
-waitUntil {time > 3}; 
+waitUntil {time > 1}; 
 
 call compile preprocessFile "configuration\CfgFunctions.fnc";
 call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
@@ -31,6 +31,7 @@ if (dtk_client)then {
 call compile preprocessFile format ['configuration\sidevariables\%1variables.sqf',dtk_side];
 };
 
+startLoadingScreen ["Compiling mission..."]; 
 call compile preprocessFile  "ServerLoad\INVvars.sqf";	
 call compile preprocessFile "configuration\Cfgmodules.sqf";											
 

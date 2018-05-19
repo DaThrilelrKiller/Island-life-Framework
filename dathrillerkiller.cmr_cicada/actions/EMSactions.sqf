@@ -45,3 +45,5 @@
 
 [player,["Drag Body","noscript.sqf",'[ems_nearman]spawn medical_drag',1,false,true,"","!medical_draging && (call ems_neardead)"]]call action_add;
 [player,["Drop Body","noscript.sqf",'medical_draging = false',1,false,true,"","medical_draging"]]call action_add;
+
+[player,["Clear Accident","noscript.sqf",'[]spawn accidents_clear',1,false,true,"",'_vcl = (nearestobjects [getpos player, ["HeliHEmpty"], 20] select 0);player distance _vcl < 50']]call action_add;

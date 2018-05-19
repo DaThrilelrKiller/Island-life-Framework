@@ -1,4 +1,3 @@
-
 INV_drogenusesperre = 0;
 INV_drogen_usesperre = FALSE;
 INV_DrogenCounter = 0;
@@ -8,8 +7,6 @@ pickingup   		 = false;
 halfwaythereallfiredup = false;
 
 AR_playerString = str player;
-
-ar_doggy = false;
 
 /*Fishing Arrays*/
 INV_FarmItemArray =
@@ -96,7 +93,6 @@ working=false;
 coppatrolarray  = [[4045.69,2284.16,0],[3661.66,4261.21,0],[4169.17,3648.72,0],[2918,3514.07,0],[1139.32,4564.22,0],[1112.11,3782.8,0],[3025.85,4435.61,0],[2190.9,4489.62,0],[2429.91,4768.43,0],[904.459,1176.82,0],[1578.37,4739.66,0],[1972.94,4290.42,0],[1523.08,4389.92,0],[2570.85,3779.43,0],[2846.55,1488.14,0],[1483.26,2539.71,0],[727.739,2934.53,0],[1563.24,4871.82,0],[2520.61,4665.69,0]];
 SigningUpForDebitCard	 = false;
 slave_cost               = 40000;
-dog_cost                 = 1000;
 HideoutLocationArray     = [];
 doingSomething            = false;
 nonlethalweapons	 = ["","Binocular", "NVGoggles", "ItemMap", "ItemCompass", "ItemRadio", "ItemWatch", "ItemGPS","TFAR_Ruck_Base", "tf_rt1523g", "tf_anprc155", "tf_mr3000", "tf_anarc210", "tf_anarc164", "tf_mr6000l", "tf_gm380", "tf_microdagr", "tf_r55", "tf_pd785", "tf_dtr650", "tf_anprc152", "tf_anprc148jem", "tf_fadak", "tf_anprc154", "tf_rf7800str", "tf_pnr1000a"];

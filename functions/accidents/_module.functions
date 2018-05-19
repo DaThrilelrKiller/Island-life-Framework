@@ -1,3 +1,5 @@
 [
-["init",false]
+["spawn",false],
+["location",false],
+["clear",true]
 ];

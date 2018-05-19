@@ -6,6 +6,12 @@ isamedic       	= true;
 dtk_sidename = "Emergency Medical Technician";
 ar_side = "EMS";
 
+USBW_Interactions = [
+["'Enable License Plate'",'!ar_plates','[]spawn plates_plate'],
+["'Disable License Plate'",'ar_plates','[]spawn plates_plate']
+];
+
+
 INV_apps = [
 ["app_warrants","sfg_textures\ipad\WARRANTS.PAA","[0,1,2,[""coplog""]] execVM 'scripts\maindialogs.sqf';"],
 ["app_civilian","sfg_textures\ipad\CIVILIAN.PAA","[0,0,0,[""playerlist""]] execVM 'scripts\maindialogs.sqf';"],
