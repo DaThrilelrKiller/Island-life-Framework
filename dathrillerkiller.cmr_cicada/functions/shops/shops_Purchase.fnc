@@ -55,6 +55,10 @@ switch(_itemtype)do
 	};
 	case "vehicle":
 	{
+		if (_amount != 1)exitWith {
+			systemchat "you can only by one vehicle silly";
+			_return = false
+		};
 		if (not(alive player)) exitWith {};																																																										
 		[_item,_logic,player,dtk_side]call shops_createVehicle;
 		_return = true;

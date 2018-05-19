@@ -52,6 +52,7 @@ class MissionSQM
 #include "DATA\DIALOGS\shopping.hpp"
 #include "DATA\DIALOGS\impound.hpp"
 #include "DATA\DIALOGS\keypress_dialog.hpp"
+#include "DATA\DIALOGS\loading_dialog.hpp"
 
 class RscTitles
 {

@@ -1,13 +1,5 @@
 private ["_shoparray","_shop","_con"];
 
-systemchat "Ctrl + Click to buy/sell 1 item";
-systemchat "Ctrl + Shift + Click to buy/sell 5 item";
-systemchat "Ctrl + Shift + Alt + Click to sell all";
-
-v_alt = false;
-v_ctrl = false;
-v_shift = false;
-
 dtk_activeShopNumber    = (_this select 0); 
 _shoparray = (INV_ItemShops select dtk_activeShopNumber);
 _shop		= (_shoparray select 0); 

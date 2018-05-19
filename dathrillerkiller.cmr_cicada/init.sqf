@@ -18,7 +18,7 @@ if (isNil "server_auth" && {dtk_client})then {
 waitUntil {!isNull player or dtk_server}; 
 diag_log text str playerSide;
 
-startLoadingScreen ["Compiling mission..."]; 
+startLoadingScreen ["","dtk_loading"]; 
 call compile preprocessFile "configuration\CfgFunctions.fnc";
 call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
 

@@ -10,9 +10,9 @@
 "purchaselic",
 "createvehicle",
 "index",
-"keyhandler",
 "lbChanged",
 "types",
 "info",
-"init"
+"init",
+"button"
 ];

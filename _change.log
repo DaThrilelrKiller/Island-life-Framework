@@ -318,3 +318,7 @@ DaThrillerKiller - Loading in is alot faster
 DaThrillerKiller - Optimizated buidling remover building posions are now saved to cache
 DaThrillerKiller - Removed appstore save app, not needed stats auto save when you logout
 DaThrillerKiller - if you die and there is not EMS online,when you repawn your corps will rise up to the heavens
+
+Version 4.6
+DaThrillerKiller - Changed shoping menu now enter amount and hit buy or sell
+DaThrillerKiller - New Loading screen instead of just black screen

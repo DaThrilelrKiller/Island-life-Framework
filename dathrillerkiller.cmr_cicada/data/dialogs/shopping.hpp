@@ -2,9 +2,6 @@ class shopping
 {
 	idd = 24;
 	movingEnable = false;
-	onKeyDown = "[_this,'onKeyDown'] call shops_keyhandler; false";
-	onKeyUp = "[_this,'onKeyUp'] call shops_keyhandler; false";
-	onLoad = "((_this select 0) displayCtrl 21) progressSetPosition 1";
 	
 	class ControlsBackground
 	{
@@ -21,20 +18,6 @@ class shopping
 	};
 	class Controls
 	{
-		class Control1339119205
-		{
-			type = 8;
-			idc = 21;
-			x = safeZoneX+safeZoneW*0.440625;
-			y = safeZoneY+safeZoneH*0.72444445;
-			w = safeZoneW*0.265;
-			h = safeZoneH*0.03222223;
-			style = 0;
-			colorBar[] = {0.6,0,0,0.7294};
-			colorFrame[] = {1,1,1,1};
-			texture = "sfg_textures\DaThrillerKiller\money.paa";
-			
-		};
 		class Control2125696138
 		{
 			type = 0;
@@ -51,36 +34,65 @@ class shopping
 			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
 			
 		};
+		class Control1247094145: RscEdit
+		{
+			type = 2;
+			idc = 12;
+			x = safeZoneX + safeZoneW * 0.289375;
+			y = safeZoneY + safeZoneH * 0.66888889;
+			w = safeZoneW * 0.140625;
+			h = safeZoneH * 0.03666667;
+			style = 0;
+			text = "1";
+			autocomplete = "";
+			font = "Zeppelin32";
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+		};
+		class Control333913750 : RscButton
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.29;
+			y = safeZoneY + safeZoneH * 0.71888889;
+			w = safeZoneW * 0.13875;
+			h = safeZoneH * 0.03666667;
+			style = 0+2;
+			text = "Buy/Sell";
+			borderSize = 0;
+			colorText[] = {1,1,1,1};
+			font = "Zeppelin32";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			colorSelectBackground[] = {0.5,0,0,0.5};
+			action = "call shops_button";
+			
+		};
 		class select_storage : RscCombo 
 		{
 			idc = 2100;
-			x = safeZoneX + safeZoneW * 0.288125;
-			y = safeZoneY + safeZoneH * 0.22777778;
-			w = safeZoneW * 0.14375;
-			h = safeZoneH * 0.03444445;
+			x = safeZoneX+safeZoneW*0.288125;
+			y = safeZoneY+safeZoneH*0.22777778;
+			w = safeZoneW*0.14375;
+			h = safeZoneH*0.03444445;
+			colorBackground[] = {0,0,0,0.9};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			onLBSelChanged = "call shops_refresh";
-			colorSelect[]           = {1,1,1,1};
+			colorSelect[] = {1,1,1,1};
 			colorSelectBackground[] = {0,0,0,0.9};
-			colorText[]             = {1, 1, 1, 1};
-			colorBackground[]       = {0,0,0,0.9};
+			colorText[] = {1,1,1,1};
+			onLBSelChanged = "call shops_refresh";
 		};
 		class lb_information : RscListBox 
 		{
 			idc = 303;
-			x = safeZoneX+safeZoneW*0.44;
-			y = safeZoneY+safeZoneH*0.26444445;
-			w = safeZoneW*0.26875;
-			h = safeZoneH*0.44666667;
+			x = safeZoneX + safeZoneW * 0.44;
+			y = safeZoneY + safeZoneH * 0.26444445;
+			w = safeZoneW * 0.26875;
+			h = safeZoneH * 0.49555556;
 			colorDisabled[] = {0.2,0.2,0.2,1};
 			colorSelectBackground[] = {0.5,0,0,0.5};
-			class ScrollBar {
-				arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-				arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-				border = "\ca\ui\data\ui_border_scroll_ca.paa";
-				thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-			};
-			
 		};
 		class lb_items : RscListBox 
 		{
@@ -89,7 +101,7 @@ class shopping
 			x = safeZoneX + safeZoneW * 0.288125;
 			y = safeZoneY + safeZoneH * 0.32777778;
 			w = safeZoneW * 0.14375;
-			h = safeZoneH * 0.43111112;
+			h = safeZoneH * 0.33333334;
 			style = 0;
 			colorBackground[] = {0.8,0.8,0.8,0.3};
 			colorDisabled[] = {0.2,0.2,0.2,1};
@@ -101,24 +113,17 @@ class shopping
 			sizeEx = 0.025;
 			soundSelect[] = {"",0.1,1.0};
 			colorSelectBackground[] = {0.5,0,0,0.5};
-			period = 1.200000;
 			onLBSelChanged = "call shops_lbChanged";
-			class ScrollBar {
-				arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
-				arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
-				border = "\ca\ui\data\ui_border_scroll_ca.paa";
-				thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
-			};
-			
+			period = 1.200000;	
 		};
 		class lable_shop : RscBackground 
 		{
 			type = 0;
 			idc = 2201;
-			x = safeZoneX+safeZoneW*0.28;
-			y = safeZoneY+safeZoneH*0.17666667;
-			w = safeZoneW*0.4375;
-			h = safeZoneH*0.03444445;
+			x = safeZoneX + safeZoneW * 0.28;
+			y = safeZoneY + safeZoneH * 0.17666667;
+			w = safeZoneW * 0.4375;
+			h = safeZoneH * 0.03444445;
 			style = 0;
 			text = "";
 			colorBackground[] = {0.5,0,0,1};
@@ -142,19 +147,7 @@ class shopping
 			colorFocused[] = {1,1,1,0};
 			colorShadow[] = {0,0,0,0};
 			sizeEx = 0.07;
-			action = "";
-			
-		};
-		class lable_info : RscBackground 
-		{
-			idc = 2201;
-			x = safeZoneX+safeZoneW*0.4425;
-			y = safeZoneY+safeZoneH*0.72222223;
-			w = safeZoneW*0.26875;
-			h = safeZoneH*0.03444445;
-			style = 0;
-			text = "";
-			colorBackground[] = {0.5,0,0,0};
+			action = "closeDialog 0";
 			
 		};
 		class lable_info_copy1 : RscBackground 
@@ -177,14 +170,18 @@ class shopping
 		{
 			type = 4;
 			idc = 2101;
-			x = safeZoneX + safeZoneW * 0.288125;
-			y = safeZoneY + safeZoneH * 0.27666667;
-			w = safeZoneW * 0.14375;
-			h = safeZoneH * 0.03444445;
+			x = safeZoneX+safeZoneW*0.288125;
+			y = safeZoneY+safeZoneH*0.27666667;
+			w = safeZoneW*0.14375;
+			h = safeZoneH*0.03444445;
 			style = 0;
 			arrowEmpty = "\ca\ui\data\ui_arrow_combo_ca.paa";
 			arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
+			colorBackground[] = {0,0,0,0.9};
 			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelect[] = {1,1,1,1};
+			colorSelectBackground[] = {0,0,0,0.9};
+			colorText[] = {1,1,1,1};
 			font = "Zeppelin32";
 			maxHistoryDelay = 1.000000;
 			sizeEx = 0.025;
@@ -193,12 +190,7 @@ class shopping
 			soundSelect[] = {"",0.15,1.0};
 			wholeHeight = 0.3;
 			onLBSelChanged = "call shops_refresh";
-			colorSelect[]           = {1,1,1,1};
-			colorSelectBackground[] = {0,0,0,0.9};
-			colorText[]             = {1, 1, 1, 1};
-			colorBackground[]       = {0,0,0,0.9};
 		};
-		
 	};
 	
 };
