@@ -2,15 +2,15 @@ private ["_apps","_uid","_MainArray","_player","_data","_array","_side","_file",
 _side = _this select 1;
 _uid = getPlayerUID(_this select 0);
 _player = (_this select 0);
-_apps = switch(_side)do{ case "CIV":{["app_store","app_store","app_settings","app_save","app_dmv","app_laws","app_civilian"]}; case "EMS": {["app_store","app_store","app_settings","app_save","app_dmv","app_laws","app_civilian"]}; case "PD":{["app_store","app_store","app_settings","app_save","app_dmv","app_laws","app_civilian","app_computer"]}; };
+_apps = switch(_side)do{ case "CIV":{["app_store","app_store","app_settings","app_dmv","app_laws","app_civilian"]}; case "EMS": {["app_store","app_store","app_settings","app_dmv","app_laws","app_civilian"]}; case "PD":{["app_store","app_store","app_settings","app_dmv","app_laws","app_civilian","app_computer"]}; };
 
 _array = 
 [
-	["Main", "BankAcount",45000],
+	["Main", "Bank",45000],
 	[_side, "Hunger",25], 
 	[_side, "Inventory",[["schluesselbund","idcard"],[1,1]]], 
-	[_side, "INV_Lizenz", []], 
-	[_side, "VehiclesLand",[]], 
+	[_side, "Licenses", []], 
+	[_side, "Vehicles",[]], 
 	[_side, "VehiclesAir", []], 
 	[_side, "VehiclesWater", []], 
 	[_side, "Weapons",[]], 
@@ -18,11 +18,11 @@ _array =
 	[_side, "Pistol",""], 
 	[_side, "Rifle",""],
 	[_side, "x26",""],
-	[_side, "1_reason",[]],
-	[_side, "1_notes",[]],
-	[_side, "kopfgeld_1",0],
-	[_side, "INV_PrivateStorage",[]],
-	[_side, "INVAppsInstalled",_apps],
+	[_side, "Warrants",[]],
+	[_side, "Notes",[]],
+	[_side, "Bounty",0],
+	[_side, "Storage",[]],
+	[_side, "Apps",_apps],
 	["Main", "lifestate",""],
 	["Main", "distance",800],
 	["Main", "detail",50],

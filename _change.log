@@ -307,4 +307,14 @@ DaThrillerKiller - fixed civilains having request backup option
 DaThrillerKiller - added Side switch detection
 
 Version 4.4
-TBD
+DaThrillerKiller - Added a new accident system, they pick a random road to spawn at. (not in game yet, testing)
+DaThrillerKiller - EMS can now toggle licence plates with the f4 menu
+DaThrillerKiller - Acetions are now readded when you respawn
+DaThrillerKiller - Ajusted spawn camera a bit
+DaThrillerKiller -
+
+Version 4.5
+DaThrillerKiller - Loading in is alot faster
+DaThrillerKiller - Optimizated buidling remover building posions are now saved to cache
+DaThrillerKiller - Removed appstore save app, not needed stats auto save when you logout
+DaThrillerKiller - if you die and there is not EMS online,when you repawn your corps will rise up to the heavens

@@ -8,7 +8,6 @@ ar_side = "PD";
 
 INV_apps = [
 ["app_civilian","sfg_textures\ipad\CIVILIAN.PAA","[0,0,0,[""playerlist""]] execVM 'scripts\maindialogs.sqf';"],
-["app_save","sfg_textures\ipad\SAVE.PAA","[]spawn StatSave_Save;"],
 ["app_oil","sfg_textures\ipad\OIL.PAA","[0,0,0,[""oilswag""]] execVM 'scripts\maindialogs.sqf'"],
 ["app_dmv","sfg_textures\ipad\DMV.PAA","[player]call licenses_check"],
 ["app_laws","sfg_textures\ipad\LAWS.PAA","[0,0,0,[""lawswag""]] execVM 'scripts\maindialogs.sqf';"],

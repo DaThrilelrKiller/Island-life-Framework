@@ -33,8 +33,21 @@ if (lifeState player == "UNCONSCIOUS")exitWith
 	titleText ["", "PLAIN", 3];
 	
 	player call cdb_clear_warrants;
-	_marker =  ("medical_" + name player);
-	_marker setMarkerText "Coroner Requested";
+	if (playersNumber Resistance > 0)then {
+		_marker =  ("medical_" + name player);
+		_marker setMarkerText "Coroner Requested";
+	}else{
+		deleteMarker  ("medical_" + name player);
+		while {true} do {
+			_corps setVelocity [
+			0, 
+			0, 
+			5
+			];
+			if ((getPos _corps)select 2 > 300)exitWith{false};
+		};
+		deleteVehicle _corps;
+	};
+
 	call medical_terminate;
 }; 
-
