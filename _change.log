@@ -322,3 +322,12 @@ DaThrillerKiller - if you die and there is not EMS online,when you repawn your c
 Version 4.6
 DaThrillerKiller - Changed shoping menu now enter amount and hit buy or sell
 DaThrillerKiller - New Loading screen instead of just black screen
+
+Version 4.7 
+DaThrillerKiller - fixed some RPT errors
+DaThrillerKiller - Improved side switch detection
+DaThrillerKiller - New camera animation spawn menu
+DaThrillerKiller - New Name change detection system
+DaThrillerKiller - Improved building remover
+DaThrillerKiller - Fixed antihack not loading
+DaThrillerKiller - New disconnect cleaner, when a player disconnects it will delete every object that is local to them. making sure the server stays smooth

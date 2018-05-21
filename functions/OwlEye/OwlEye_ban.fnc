@@ -17,7 +17,7 @@ else
 
 	if (getPlayerUID player == _uid)then {
 	systemchat "you have been banned fron the server!! Contact the admins";
-	(findDisplay 46) closeDisplay 1;
+	(findDisplay 46) closeDisplay 0;
 	}
 	else{
 	systemchat format ["%1 was benned from the server",_name];

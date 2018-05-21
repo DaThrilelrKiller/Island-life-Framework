@@ -13,5 +13,7 @@ _money = _x select 1;
 	true
 }count ar_paychecks;
 
-kontostand = kontostand + _income;
+if (!isNil "kontostand")then {
+	kontostand = kontostand + _income;
+};
 systemchat format ["%1 you recived a paycheck of %2$",(name player),_income];

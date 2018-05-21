@@ -29,6 +29,9 @@ for "_a" from 0 to 1 step 0 do
 			{
 				disableSerialization;
 				_abortctrl = _this select 0;
+				 _abortctrl buttonSetAction "
+				 ['SERVER',[player],'s_disconnect_handle',false,false]call network_MPExec;
+				 ";
 				private["_e"];
 				for "_e" from 10 to 1 step -1 do 
 				{
@@ -60,7 +63,7 @@ for "_a" from 0 to 1 step 0 do
 								[dtk_side, "Apps",INVAppsInstalled],
 								["Main", "lifestate", (lifeState player)],
 								[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],
-								["Main", "Side", dtk_side]
+								["Main", "Side", [dtk_side,s_seasion]]
 							]
 						];
 						["SERVER",_save,"S_statsave_save",false,false]call network_MPExec;

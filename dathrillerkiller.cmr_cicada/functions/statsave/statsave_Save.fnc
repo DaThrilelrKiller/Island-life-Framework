@@ -20,7 +20,7 @@ _save =
 		[dtk_side, "Apps",INVAppsInstalled],
 		["Main", "lifestate", (lifeState player)],
 		[dtk_side, "seasion", [s_seasion,time,getPos player,dtk_side]],
-		["Main", "Side", dtk_side]
+		["Main", "Side", [dtk_side,s_seasion]]
 	]
 ];
 

@@ -28,8 +28,7 @@ AppStoreArray =
 "app_laws",
 "app_gangs",
 "app_stockmarket",
-"app_computer",
-"app_save"
+"app_computer"
 ];
 
 

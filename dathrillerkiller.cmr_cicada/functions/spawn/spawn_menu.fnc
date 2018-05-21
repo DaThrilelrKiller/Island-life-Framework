@@ -15,11 +15,17 @@ Prams:
 
 private ["_index","_c","_marker","_name","_posions","_index"];
 
-_index = lbAdd [1401, "                         Spawns"];
-_index = lbAdd [1401, "======================================================="];
 
-waitUntil {!isNil 'AR_Whitelistloaded'};
-waitUntil {!isNil 'SpawnPoints'};
+if (isNil "AR_Whitelistloaded" || {isNil "SpawnPoints"})then {
+	lbAdd [1401, "Waiting for stats to load!"];
+	waitUntil {!isNil 'AR_Whitelistloaded'};
+	waitUntil {!isNil 'SpawnPoints'};
+};
+
+lbClear 1401;
+lbAdd [1401, "                         Spawns"];
+lbAdd [1401, "======================================================="];
+
 
 for [{_c=0}, {_c < (count SpawnPoints)}, {_c=_c+1}] do 
 {

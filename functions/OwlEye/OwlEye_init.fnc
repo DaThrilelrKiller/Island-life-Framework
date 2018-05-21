@@ -17,7 +17,7 @@ isDedicated = false;
 []spawn {
 
 sleep 60;
-waitUntil {!isNil 'AlleMissionsObjekte'};
+waitUntil {!isNil 'dtk_master'};
 temparray =  ["itemradio","itemmap","itemcompass","itemwatch","tf_microdagr","itemgps","tf_anprc152_1","firefighterweap2","tf_anprc148jem_1","tf_pd785_1","m16a2","m16a4"];
 
 private ["_vehicleantihack"];
@@ -25,7 +25,7 @@ private ["_vehicleantihack"];
 	_vehicleantihack = (_x select 2 select 0);
 	temparray set [count temparray,(toLower _vehicleantihack)];
 	true
-}count AlleMissionsObjekte;
+}count dtk_master;
 sleep 60;
 
 private ["_i"];

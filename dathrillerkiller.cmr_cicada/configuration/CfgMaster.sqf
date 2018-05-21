@@ -902,7 +902,6 @@ dtk_items = [
 ["app_stockmarket",["App", "misc"],["app_stockmarket", "Stock Market"],[1500, 1500], [5, "", ""], [true, true, true,false,"nouse"]],
 ["app_computer",["App", "misc"],["app_computer", "Police Computer"],[1500, 1500], [5, "", ""], [true, true, true,false,"nouse"]],
 ["app_store",["App", "misc"],["app_store", "App Store"],[1500, 1500], [5, "", ""], [true, true, true,false,"nouse"]],
-["app_save",["App", "misc"],["app_save", "Save Stats"],[1500, 1500], [5, "", ""], [true, true, true,false,"nouse"]],
 ["app_settings",["App", "misc"],["app_settings", "Settings"],[1500, 1500], [5, "", ""], [true, true, true,false,"nouse"]],
 
 ["SearchLight_UN_EP1",["Item", "misc"],["SearchLight_UN_EP1", "Search Light"],[3000, 3000], [10, "", ""], [true, true, true,false,"createobject"]],

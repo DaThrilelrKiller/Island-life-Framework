@@ -34,8 +34,7 @@ AppStoreArray =
 "app_dmv",
 "app_laws",
 "app_gangs",
-"app_stockmarket",
-"app_save"
+"app_stockmarket"
 ];
 
 dtkgarageshop = 

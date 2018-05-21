@@ -31,8 +31,7 @@ class shopping
 			colorBackground[] = {0.6784,0.5412,0.3176,1};
 			colorText[] = {0.3216,0.4588,0.6824,1};
 			font = "Zeppelin32";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1);
-			
+			sizeEx = 0;
 		};
 		class Control1247094145: RscEdit
 		{

@@ -13,7 +13,8 @@ dtk_server_modules =
 "Impound",
 "Core",
 "Fishing",
-"Accidents"
+"Accidents",
+"Disconnect"
 ];
 
 /*loads variables first for all active modules*/

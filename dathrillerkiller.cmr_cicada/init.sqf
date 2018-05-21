@@ -11,8 +11,10 @@ enableSaving [false, false];
 
 if (isNil "server_auth" && {dtk_client})then {
 	systemchat "Waiting for server to authenticate";
+	diag_log text "Waiting for server to authenticate";
 	waitUntil {!isNil "server_auth"};
 	systemchat "Server authentication finished";
+	diag_log text "Server authentication finished";
 };
 
 waitUntil {!isNull player or dtk_server}; 

@@ -1,4 +1,3 @@
-[player,["Confiscate Money","mafiasafe.sqf", ["ausrauben", mafiasafe, "mafiasafe"],1,false,true,"","player distance mafiasafe <= 2"]]call action_add;
 [player,["Remove Spike Strip","noscript.sqf",'if ([player,"spikestrip",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "spikestrip") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Take Criminal Evidence","noscript.sqf",'deletevehicle cursorTarget',1,true,true,"",'(typeOf cursorTarget == "weaponholder") && {player distance cursorTarget < 4}']]call action_add;
 [player,["Take Scuba Gear","noscript.sqf",'if ([player,"gnt_scubaw",1] call storage_add)then {deletevehicle cursorTarget}',1,true,true,"",'(typeOf cursorTarget == "gnt_scubaw") && {player distance cursorTarget < 4}']]call action_add;

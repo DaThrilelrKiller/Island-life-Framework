@@ -13,4 +13,10 @@ if (!isNil "_grid")then
 	
 	_ctrl ctrlMapAnimAdd [1,0.01,_grid];
 	ctrlMapAnimCommit _ctrl;
+	
+	waitUntil {camCommitted  dtk_cam};
+	dtk_cam camSetPos [(_grid select 0),((_grid select 1)+10),(_grid select 2)+50];
+	dtk_cam camSetTarget _grid;
+	dtk_cam camCommit 1;
+	
 };

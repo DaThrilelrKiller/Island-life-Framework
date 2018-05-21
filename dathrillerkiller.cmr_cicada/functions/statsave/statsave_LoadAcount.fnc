@@ -45,9 +45,15 @@ setViewDistance (_stats select 19);
 setTerrainGrid (_stats select 20);
 dtk_seasion = (_stats select 21);
 _side = (_stats select 22);
+_name = _stats select 23;
 
-if (_side != dtk_side && {_side != ""} && {(dtk_seasion select 0) == s_seasion})then {
-["ALL",[name player,_side,dtk_side],{systemchat format ["%1 switched from %2 to %3",_this select 0,_this select 1,_this select 2];},false,true]call network_MPExec;
+if ((_side select 0) != dtk_side && {(_side select 1) == s_seasion})then {
+["ALL",[name player,(_side select 0),dtk_side],{systemchat format ["%1 switched from %2 to %3",_this select 0,_this select 1,_this select 2];},false,true]call network_MPExec;
 };
+
+if (_name != name player && {_name != ""})then {
+["ALL",[_name,name player],{systemchat format ["%1 is now know as %2",_this select 0,_this select 1];},false,true]call network_MPExec;
+};
+
 
 AR_StaticsLoaded = true;
