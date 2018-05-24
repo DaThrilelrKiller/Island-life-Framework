@@ -6,7 +6,6 @@ _name = (_item call config_displayname);
 if(primaryweapon player == "" and secondaryweapon player == "")then{player playmove "AmovPercMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon"}else{player playmove "AinvPknlMstpSlayWrflDnon"};
 
 if (_action == "uebergabe") then 
-
 {	
 
 	_player   = call compile(_this select 3);

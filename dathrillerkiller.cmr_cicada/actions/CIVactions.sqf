@@ -39,8 +39,8 @@
 [player,["Reset Targets","noscript.sqf",'{_x animate["terc",0]} count (nearestobjects [getpos player, ["TargetEpopup"],  500])',1,true,true,"",'player distance targetrange1 < 10']]call action_add;
 [player,["Reset Targets","noscript.sqf",'{_x animate["terc",0]} count (nearestobjects [getpos player, ["TargetEpopup"],  500])',1,true,true,"",'player distance targetrange2 < 10']]call action_add;
 [player,["Impound Lot","noscript.sqf",'[]call impound_open;',1,false,true,"","player distance newimpoundlot <= 5"]]call action_add;
-[player,["Get A Taxi Job","scripts	axi.sqf", ["getajob_taxi"],1,false,true,"","player distance taxishop <= 5"]]call action_add;
-[player,["Finish My Taxi Mission","scripts	axi.sqf", ["canceljob_taxi"],1,false,true,"","(player distance taxishop <= 5) and workplacejob_taxi_active"]]call action_add;	
+[player,["Get A Taxi Job","scripts\taxi.sqf", ["getajob_taxi"],1,false,true,"","player distance taxishop <= 5"]]call action_add;
+[player,["Finish My Taxi Mission","scripts\taxi.sqf", ["canceljob_taxi"],1,false,true,"","(player distance taxishop <= 5) and workplacejob_taxi_active"]]call action_add;	
 [player,["Sign-up For A Debit Card","scripts\debitcardsignup.sqf",["mainbank"],1,false,true,"","player distance mainbank <= 15 and (!SigningUpForDebitCard)"]]call action_add;
 [player,["Get Assassination Job","scripts\assassination.sqf",["getajob_assassin"],1,false,true,"","player distance assassin <= 3"]]call action_add;
 [player,["Switch To Assassin Clothes","noscript.sqf",'["TK_INS_Soldier_EP1"] call clothing_switch;',1,true,true,"",'player distance assassinshop < 10 and ("assassinlic" call licenses_has)']]call action_add;

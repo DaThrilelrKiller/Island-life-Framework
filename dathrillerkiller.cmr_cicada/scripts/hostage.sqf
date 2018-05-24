@@ -2,46 +2,14 @@ _secondcounter = 0;
 _minutecounter = 0;
 _art = (_this select 3) select 0;
 
-if (_art == "serverloop") then 
-
-{
-	for [{_i=0}, {_i < (count workplacejob_hostage_serverarray)}, {_i=_i+1}] do 
-
-		{
-
-		if (isNull ((workplacejob_hostage_serverarray select _i) select 0)) then 
-
-			{
-
-			if (!(isNull ((workplacejob_hostage_serverarray select _i) select 1))) then 
-
-				{	
-
-				deleteVehicle ((workplacejob_hostage_serverarray select _i) select 1);
-				deletemarker "htargetmarker";
-
-				};
-
-			workplacejob_hostage_serverarray set [_i,""];
-			workplacejob_hostage_serverarray = workplacejob_hostage_serverarray - [""];
-			sleep ((workplacejob_hostage_break)*60);			
-			workplacejob_hostage_active = false; 
-			publicvariable "workplacejob_hostage_active";
-			
-			};				
-
-		};
-		ar_hostage_rt = (time + 10);
-
-};
-
 if (_art == "getajob_hostage") then 
 
 {
 _west = playersNumber west;
 
 if (_west < 3) exitwith {systemChat  "There Must Be At Least 3 ECPD Officers Online To Take A Hostage!";};
-if(workplacejob_hostage_active)exitWith{systemChat  "There Are Currently No More Hostages!";};
+if !(isNil "hostage1" || {isNull hostage1})exitWith {systemChat  "There Are Currently No More Hostages!";};
+
 if(workplacejob_hostage_failed)exitWith{systemChat  "You Have Failed A Hostage Mission Recently, Maybe You Can Do It Again Later!";};
 
 _array  = [[Hostagespawn1, 1], [Hostagespawn2, 1]];
@@ -62,10 +30,6 @@ hostage1 setvehicleinit 'hostage1 = this;this setVehicleVarName "hostage1";';
 
 processInitCommands;
 
-
-
-format["if (dtk_server) then {workplacejob_hostage_serverarray set [count workplacejob_hostage_serverarray,[%1, hostage1]];};", player] call network_broadcast;
-
 _markerobj = createMarker ["htargetmarker",[0,0]];																				
 _markername= "htargetmarker";																														
 _markerobj setMarkerShape "ICON";								
@@ -73,8 +37,6 @@ _markerobj setMarkerShape "ICON";
 "htargetmarker" setMarkerColor "ColorRed";																														
 "htargetmarker" setMarkerText "Hostage target";								
 _markername SetMarkerPos _start;
-
-workplacejob_hostage_active = true; publicvariable "workplacejob_hostage_active";
 																
 systemChat  "The Hostage Is Marked On The Map, Don't Let The Police Get You!";
 
@@ -170,8 +132,6 @@ deletevehicle hostage1;
 deletemarker "htargetmarker";
 										
 sleep ((workplacejob_hostage_break)*60);			
-workplacejob_hostage_active = false; 
-publicvariable "workplacejob_hostage_active";
 
 if (workplacejob_hostage_failed) then 
 

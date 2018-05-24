@@ -24,10 +24,6 @@ _filename = _item call config_code;
 	};
 };
 
-
-
-
-
 if (_action == "drop") then 
 
 {

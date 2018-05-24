@@ -1,5 +1,4 @@
 if (dtk_server)exitWith {};
-
 if !(isCop)exitWith {};
 
 ["Handcuff","ku",["h",false,false,false],cuffs_cuff]call keypress_add;

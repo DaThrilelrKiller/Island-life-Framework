@@ -2,46 +2,12 @@ _secondcounter = 0;
 _minutecounter = 0;
 _art = (_this select 3) select 0;
 
-if (isNil "workplacejob_assassin_serverarray") then {workplacejob_assassin_serverarray = []};
-
-if (_art == "serverloop") then 
-
-{
-	for [{_i=0}, {_i < (count workplacejob_assassin_serverarray)}, {_i=_i+1}] do 
-
-		{
-
-		if (isNull ((workplacejob_assassin_serverarray select _i) select 0)) then 
-
-			{
-
-			if (!(isNull ((workplacejob_assassin_serverarray select _i) select 1))) then 
-
-				{	
-
-				deleteVehicle ((workplacejob_assassin_serverarray select _i) select 1);
-				deletemarker "targetmarker";
-
-				};
-
-			workplacejob_assassin_serverarray set [_i,""];
-			workplacejob_assassin_serverarray = workplacejob_assassin_serverarray - [""];
-			"if(iscop)then{player sidechat ""The threat to the VIP has been removed""}" call network_broadcast;
-			sleep ((workplacejob_assassin_break)*60);			
-			workplacejob_assassin_active = false; 
-			publicvariable "workplacejob_assassin_active";
-			
-			};				
-
-		};
-	ar_assassination_rt = (time + 10);
-};
-
 if (_art == "getajob_assassin") then 
 
 {
 
-if(workplacejob_assassin_active)exitWith{systemChat  "There are currently no targets that require assassination.";};
+if !(isNil "VIPtarget" || {isNull VIPtarget})exitWith {systemChat  "There are currently no targets that require assassination.";};
+
 if(workplacejob_assassion_failed)exitWith{systemChat  "You have failed an assassination recently, maybe you'll be hired again later.";};
 
 _array  = [[VIPspawn1, 10], [VIPspawn2, 10], [VIPspawn3, 10]];
@@ -124,18 +90,6 @@ if ((!(VIPtarget in assveh)) and (alive VIPtarget))
 		VIPbodyguard2 moveInCargo assveh;
 	};
 
-
-
-
-
-
-
-
-
-
-
-format["workplacejob_assassin_serverarray = workplacejob_assassin_serverarray + [[%1, VIPtarget]];", player] call network_broadcast;
-
 _markerobj = createMarker ["targetmarker",[0,0]];																				
 _markername= "targetmarker";																														
 _markerobj setMarkerShape "ICON";								
@@ -143,9 +97,7 @@ _markerobj setMarkerShape "ICON";
 "targetmarker" setMarkerColor "ColorRed";																														
 "targetmarker" setMarkerText "Assassination target";								
 _markername SetMarkerPos _start;
-
-workplacejob_assassin_active = true; publicvariable "workplacejob_assassin_active";
-																
+															
 systemChat  "The VIP target has been marked on the map. Kill him before the police can take him to safety.";
 
 "if (iscop) then {player sideChat ""Someone is trying to kill a government VIP. The target has been marked on the map. Rescue the target before its too late!""};" call network_broadcast;
@@ -227,8 +179,6 @@ deletevehicle assveh;
 deletevehicle VIPbodyguard1;
 deletevehicle VIPbodyguard2;																				
 sleep ((workplacejob_assassin_break)*60);			
-workplacejob_assassin_active = false; 
-publicvariable "workplacejob_assassin_active";
 
 if (workplacejob_assassion_failed) then 
 

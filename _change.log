@@ -331,3 +331,11 @@ DaThrillerKiller - New Name change detection system
 DaThrillerKiller - Improved building remover
 DaThrillerKiller - Fixed antihack not loading
 DaThrillerKiller - New disconnect cleaner, when a player disconnects it will delete every object that is local to them. making sure the server stays smooth
+
+Version 4.8
+DaThrillerKiller - Fixed Taxi missions
+DaThrillerKiller - Fixed oil processing not showing up
+DaThrillerKiller - When you drop an item, it will now show a pysical object
+DaThrillerKiller - tweaked the way taxi, assassination, and hostage mission work
+DaThrillerKiller - Fixed E menu not working
+DaThrillerKiller - Fixed esscort not working

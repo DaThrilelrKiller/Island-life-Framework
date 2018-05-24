@@ -38,14 +38,6 @@ if (lifeState player == "UNCONSCIOUS")exitWith
 		_marker setMarkerText "Coroner Requested";
 	}else{
 		deleteMarker  ("medical_" + name player);
-		while {true} do {
-			_corps setVelocity [
-			0, 
-			0, 
-			5
-			];
-			if ((getPos _corps)select 2 > 300)exitWith{false};
-		};
 		deleteVehicle _corps;
 	};
 

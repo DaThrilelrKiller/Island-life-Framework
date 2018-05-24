@@ -6,37 +6,6 @@ if (isNil "workplacejob_taxi_sperre") then {workplacejob_taxi_sperre = false};
 if (isNil "workplacejob_taxi_kundebeginn") then {workplacejob_taxi_kundebeginn = false};
 if (isNil "workplacejob_taxi_kundeactive") then {workplacejob_taxi_kundeactive = false};
 if (isNil "workplacejob_taxi_active") then {workplacejob_taxi_active = false};
-if (isNil "workplacejob_taxi_serverarray") then {workplacejob_taxi_serverarray = []};
-
-if (_art == "serverloop") then 
-
-{
-	for [{_i=0}, {_i < (count workplacejob_taxi_serverarray)}, {_i=_i+1}] do 
-
-		{
-
-		if (isNull ((workplacejob_taxi_serverarray select _i) select 0)) then 
-
-			{
-
-			if (!(isNull ((workplacejob_taxi_serverarray select _i) select 1))) then 
-
-				{	
-
-				deleteVehicle ((workplacejob_taxi_serverarray select _i) select 1);
-
-				};
-
-			workplacejob_taxi_serverarray set [_i,""];
-			workplacejob_taxi_serverarray = workplacejob_taxi_serverarray - [""];
-			
-			};				
-
-		};
-
-	ar_taxi_rt = (time + 10);
-};
-
 
 if (_art == "getajob_taxi") then 
 
@@ -80,10 +49,8 @@ while {true} do
 	_taxizeit = time;
 	_civ 	  = civclassarray select round random(count civclassarray - 1);
 
-	call compile format ["'%1' createUnit [[(_start select 0),(_start select 1),0], group civ_logicunit, ""%2taxikunde = this; this setVehicleVarName """"%2taxikunde""""; this disableAI """"MOVE""""; this disableAI """"TARGET"""";""]; [%2taxikunde] join grpNull; processInitCommands;", _civ, player];																												
-
-	format["workplacejob_taxi_serverarray + [%1, %1taxikunde];", player] call network_broadcast;
-																																																																		
+	call compile format ["'%1' createUnit [[(_start select 0),(_start select 1),0], group player, ""%2taxikunde = this; this setVehicleVarName """"%2taxikunde""""; this disableAI """"MOVE""""; this disableAI """"TARGET"""";""]; [%2taxikunde] join grpNull; processInitCommands;", _civ, player];																												
+																																																																
 	_markerobj = createMarkerLocal ["taxikundenmarker",[0,0]];																				
 	_markername= "taxikundenmarker";																														
 	_markerobj setMarkerShapeLocal "ICON";								

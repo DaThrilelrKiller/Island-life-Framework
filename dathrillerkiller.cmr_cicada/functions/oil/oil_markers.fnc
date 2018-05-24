@@ -26,7 +26,7 @@ _locations = [];
 
 {
 	if !([_x,50]call _near)then {
-		_marker = createMarkerLocal [("oil_" + str _ForEachIndex), getPos _x];
+		_marker = createMarkerLocal [("drill_" + str _ForEachIndex), getPos _x];
 		_marker setMarkerTypeLocal "mil_dot";
 		_marker setMarkerColorLocal "colorBlack";
 		_marker setMarkerTextlocal "Oil Field";
