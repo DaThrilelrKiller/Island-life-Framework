@@ -228,6 +228,7 @@ class ipad
 			text = "1";
 			colorBackground[] = {0.6902,0.6,0.0196,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
+			onChar = "[_this, 1] call test;";		
 			
 		};
 		class RscButton_1611 : Swag_RscButton 

@@ -25,7 +25,7 @@ INV_apps = [
 ["app_settings","sfg_textures\ipad\SETTINGS.PAA","call keypress_menu"]
 ];
 
-AppStoreArray = 
+AppStoreArray = {
 [
 "app_phone",
 "app_warrants",
@@ -36,44 +36,4 @@ AppStoreArray =
 "app_gangs",
 "app_stockmarket"
 ];
-
-dtkgarageshop = 
-[
-"DTK_Upgrades",
-"DTK_LableBreak",
-"dtk_Speed1",
-"dtk_Speed2",
-"dtk_Speed3",
-"dtk_Speed4",
-"dtk_Speed5",
-"dtk_Speed6",
-"DTK_LableSirens",
-"DTK_LableBreak",
-"dtk_kmesiren1",
-"dtk_kmesiren2",
-"dtk_kmesiren3",
-"dtk_NewSiren1",
-"dtk_NewSiren2",
-"dtk_NewSiren3",
-"dtk_Galls",
-"dtk_Gyelp",
-"dtk_Wail",
-"dtk_Yelp",
-"dtk_Phasser",
-"dtk_HighWail",
-"dtk_HyperWail",
-"dtk_HyperYelp",
-"dtk_LowPhasser",
-"dtk_PowerCall",
-"dtk_RumblerWail",
-"dtk_RumblerYelp",
-"dtk_SVPWail",
-"dtk_SVPYelp",
-"dtk_SVPPhaser",
-"DTK_Maintenance",
-"DTK_LableBreak",
-"dtk_repair",
-"dtk_refual",
-"dtk_fullmaintenance",
-"dtk_changeplatenumbers"
-];
+};

@@ -26,10 +26,7 @@ closeDialog 0;
 {
 	_array = _this select 0;
 	sleep 0.3;
+	waitUntil {sleep 0.1; preloadCamera _array};
 	player setPos _array; 
 	player setPos _array; 
-	'dynamicBlur' ppEffectAdjust [0]; 
-	'dynamicBlur' ppEffectCommit 4; 
-	sleep 10;
-	'dynamicBlur' ppEffectEnable false; 
 };

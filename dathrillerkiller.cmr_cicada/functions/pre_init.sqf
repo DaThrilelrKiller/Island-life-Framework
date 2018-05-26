@@ -1,3 +1,9 @@
+call compile preprocessFile "configuration\CfgFunctions.fnc";
+call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
+call compile preprocessFile "configuration\CfgMaster.sqf";
+call compile preprocessFile "configuration\CfgShops.sqf";
+call compile preprocessFile "ServerLoad\Optimize.sqf";
+
 private ["_modules","_functions"];
 dtk_fnc_total = 0;
 
@@ -81,8 +87,3 @@ dtk_active_modules =
 
 
 diag_log text format ["Total Modules: %2 Total Functions: %1",dtk_fnc_total,count dtk_active_modules];
-call setup_init;
-
-if (dtk_client)then {
-["ALL",[player,dtk_side,getPlayerUID player],"setup_jip",false,true]call network_MPExec;
-};

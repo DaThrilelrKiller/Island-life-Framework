@@ -1269,8 +1269,8 @@ INV_ItemShops = [
 [terror,["","Terror Shop"],terror,dummyobj,_terror2,_terror2,true,{dtk_civ}],
 [terrorair,["","Terror Air Shop"],terrorair,dummyobj,_terrorairlist,_terrorairlist,true,{dtk_civ}],
 [SFGVehicleDealer,["","Emita County Vehicle Dealer"],SFGVehicleDealer,SFGSpawn,_SFGDealer,_SFGDealer,true,{dtk_civ}],
-[BuildingCollapesLogic,["","SFG App Store"],dummyobj,dummyobj,AppStoreArray,AppStoreArray,false,{true}],
-[dtkgarage,["",""],dummyobj,dummyobj,dtkgarageshop,dtkgarageshop,false,{true}]
+[BuildingCollapesLogic,["","SFG App Store"],dummyobj,dummyobj,"AppStoreArray","AppStoreArray",false,{true}],
+[dtkgarage,["",""],dummyobj,dummyobj,"garage_items","garage_items",false,{true}]
 ];
 
 private ["_shop"];

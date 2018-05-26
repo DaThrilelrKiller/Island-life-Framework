@@ -25,7 +25,7 @@ INV_apps = [
 ["app_settings","sfg_textures\ipad\SETTINGS.PAA","call keypress_menu"]
 ];
 
-AppStoreArray = 
+AppStoreArray = {
 [
 "app_phone",
 "app_warrants",
@@ -36,21 +36,4 @@ AppStoreArray =
 "app_gangs",
 "app_stockmarket"
 ];
-
-dtkgarageshop = 
-[
-"DTK_Upgrades",
-"DTK_LableBreak",
-"dtk_Speed1",
-"dtk_Speed2",
-"dtk_Speed3",
-"dtk_Speed4",
-"dtk_Speed5",
-"dtk_Speed6",
-"DTK_Maintenance",
-"DTK_LableBreak",
-"dtk_repair",
-"dtk_refual",
-"dtk_fullmaintenance",
-"dtk_changeplatenumbers"
-];
+};

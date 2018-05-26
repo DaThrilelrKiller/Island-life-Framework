@@ -5,7 +5,7 @@ CL2MOD_fnc_FruitMachineEnvio = {};
 
 diag_log text "[LOG]Initialization Started";
 
-dtk_client = [true,false]select (isServer && isDedicated);
+dtk_client = hasInterface;
 dtk_server = !dtk_client;
 enableSaving [false, false];
 
@@ -21,8 +21,6 @@ waitUntil {!isNull player or dtk_server};
 diag_log text str playerSide;
 
 startLoadingScreen ["","dtk_loading"]; 
-call compile preprocessFile "configuration\CfgFunctions.fnc";
-call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
 
 /* Go ahead and figure out what side the player is on */
 if (dtk_client)then {
@@ -35,8 +33,8 @@ if (dtk_client)then {
 call compile preprocessFile format ['configuration\sidevariables\%1variables.sqf',dtk_side];
 };
 
-call compile preprocessFile  "ServerLoad\INVvars.sqf";	
-call compile preprocessFile "configuration\Cfgmodules.sqf";											
+call compile preprocessFile  "configuration\CfgVariables.sqf";	
+call compile preprocessFile "functions\post_init.sqf";											
 
 
 if (dtk_client) then {

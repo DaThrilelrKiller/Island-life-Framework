@@ -3584,7 +3584,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="gangarea1";
-			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-1];this allowdamage false;this setVectorUp [0,0,1]; diag_log text 'Mission Initfields loaded';";
+			init="this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)-1];this allowdamage false;this setVectorUp [0,0,1]; call compile preprocessFile 'functions\pre_init.sqf';";
 		};
 		class Item1
 		{

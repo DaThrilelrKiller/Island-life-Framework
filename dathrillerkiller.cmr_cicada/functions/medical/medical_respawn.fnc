@@ -9,7 +9,7 @@ _corps setDamage 0;
 ["ALL",player,{_this setUnconscious true;},false,true]call network_MPExec;
 ["ALL",player,{_this allowDamage false;},false,true]call network_MPExec;
 ["ALL",player,{_this addaction ["","noscript.sqf",format['%1 call core_interact;',_this],25,false,true,"LeanRight","player distance _target < 5 && {!([_target,'Interact (E)','']call tag_show)}"];},false,false]call network_MPExec;
-
+player setVariable ["id",dtk_id,true];
 
 removeAllWeapons _unit;
 []call storage_dropall;

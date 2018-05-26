@@ -3,5 +3,6 @@
 "remove",
 "show",
 "init",
+"jip",
 "handler"
 ];

@@ -11,13 +11,14 @@ switch(_action)do
 
 	case "pong":
 	{
-		[(_this select 2),["score",diag_fps,diag_fpsMin,(serverTime - (_this select 1)),count core_loop_array],'core_performance',false,false]call network_MPExec;
+		[(_this select 2),["score",diag_fps,diag_fpsMin,(serverTime - (_this select 1)),count core_loop_array,(owner (_this select 2))],'core_performance',false,false]call network_MPExec;
 	};
 	
 	case "score":
 	{ 
 		closeDialog 0;
 		"Performance" hintC [
+		format ["Client ID: %1",(_this select 5)],
 		format ["Exec Time: %1",[(_this select 3),2] call BIS_fnc_cutDecimals], 
 		format ["PPS Time: %1",[(time - dtk_send_time),2] call BIS_fnc_cutDecimals], 
 		format ["Server Uptime: %1",[(serverTime / 60 / 60)] call BIS_fnc_timeToString], 

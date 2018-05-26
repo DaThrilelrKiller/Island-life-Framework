@@ -48,6 +48,7 @@ if (_skinsold != _skin) then {
 	player setVariable ["cdb_license",_license,true];
 	player setVariable ["cdb_notes",_notes,true];
 	player setVariable ["cdb_bounty",_bounty,true]; 
+	player setVariable ["id",dtk_id,true];
 	execVM format ['actions\%1actions.sqf',dtk_side];
 	if (dtk_side == "EMS")then
 	{

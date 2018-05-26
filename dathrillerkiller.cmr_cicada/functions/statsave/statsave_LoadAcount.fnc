@@ -13,8 +13,9 @@ Prams:
 */
 
 private ["_stats","_UID"];
-_stats = _this;
-_UID = (_stats select 0);
+_UID = _this select 0;
+dtk_id = _this select 1;
+_stats = _this select 2;
 removeAllWeapons player;
 
 if ((getPlayerUID player) != _UID)exitWith {
@@ -22,30 +23,30 @@ systemChat format ["Almost loaded with (%1`s) stats requesting stats again",_UID
 ["SERVER",[player,dtk_side],"s_statsave_load",false,false]call network_MPExec;
 };
 
-kontostand = (_stats select 1);
-dtk_hunger = (_stats select 2);
-player setVariable ["dtk_storage",(_stats select 3), true];
-INVVehiclesLand = (_stats select 5);
-{player addMagazine _x} count (_stats select 9);
-{if !(_x call TFAR_fnc_isRadio)then {player addWeapon _x};}count (_stats select 8);
-player setVariable ["Pistol",(_stats select 10),true];
-player setVariable ["Rifle",(_stats select 11),true];
-player setVariable ["x26",(_stats select 12),true];
-player setVariable ["cdb_warrants",(_stats select 13),true];
-player setVariable ["cdb_license",(_stats select 4),true];
-player setVariable ["cdb_notes",(_stats select 14),true];
-player setVariable ["cdb_bounty",(_stats select 15),true];
+kontostand = (_stats select 0);
+dtk_hunger = (_stats select 1);
+player setVariable ["dtk_storage",(_stats select 2), true];
+INVVehiclesLand = (_stats select 4);
+{player addMagazine _x} count (_stats select 8);
+{if !(_x call TFAR_fnc_isRadio)then {player addWeapon _x};}count (_stats select 7);
+player setVariable ["Pistol",(_stats select 9),true];
+player setVariable ["Rifle",(_stats select 10),true];
+player setVariable ["x26",(_stats select 11),true];
+player setVariable ["cdb_warrants",(_stats select 12),true];
+player setVariable ["cdb_license",(_stats select 3),true];
+player setVariable ["cdb_notes",(_stats select 13),true];
+player setVariable ["cdb_bounty",(_stats select 14),true];
 
-INV_PrivateStorage = (_stats select 16);
-INVAppsInstalled = (_stats select 17);
-if ((_stats select 18) == "UNCONSCIOUS")then {
+INV_PrivateStorage = (_stats select 15);
+INVAppsInstalled = (_stats select 16);
+if ((_stats select 17) == "UNCONSCIOUS")then {
 ["ALL",["dtk_client",format ["[RELOG DETECTION] caught %2%1 loging in after being dead, this could be a mistake", name player, player],3],"network_chat",false,false]call network_MPExec;
 };
-setViewDistance (_stats select 19);
-setTerrainGrid (_stats select 20);
-dtk_seasion = (_stats select 21);
-_side = (_stats select 22);
-_name = _stats select 23;
+setViewDistance (_stats select 18);
+setTerrainGrid (_stats select 19);
+dtk_seasion = (_stats select 20);
+_side = (_stats select 21);
+_name = _stats select 22;
 
 if ((_side select 0) != dtk_side && {(_side select 1) == s_seasion})then {
 ["ALL",[name player,(_side select 0),dtk_side],{systemchat format ["%1 switched from %2 to %3",_this select 0,_this select 1,_this select 2];},false,true]call network_MPExec;

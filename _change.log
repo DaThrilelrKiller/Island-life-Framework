@@ -339,3 +339,10 @@ DaThrillerKiller - When you drop an item, it will now show a pysical object
 DaThrillerKiller - tweaked the way taxi, assassination, and hostage mission work
 DaThrillerKiller - Fixed E menu not working
 DaThrillerKiller - Fixed esscort not working
+
+Version 4.9
+DaThrillerKiller - Even more loading optimization of framework
+DaThrillerKiller - added pre init - runs before player exsist loads all functions
+DaThrillerKiller - added post init - runs when player exsist
+DaThrillerKiller - made sure connetion id is always set to the player
+Note - there should be a big diffence in load times on this update.
