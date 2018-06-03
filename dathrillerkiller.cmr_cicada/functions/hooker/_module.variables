@@ -1,0 +1,5 @@
+module_hooker = true;
+hooker_max = 3;
+hooker_cost = 40000;
+hooker_classes = ["Hooker1","Hooker2","Hooker3"];
+dtk_hookers = [];

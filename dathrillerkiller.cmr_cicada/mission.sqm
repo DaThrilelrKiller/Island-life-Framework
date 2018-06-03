@@ -133,8 +133,8 @@ class Mission
 	randomSeed=4744745;
 	class Intel
 	{
-		briefingName="Island Life Role Play Framework";
-		briefingDescription="By: Straight Forward Gaming";
+		briefingName="AntumRP";
+		briefingDescription="By: DaThrillerKiller";
 		resistanceEast=1;
 		startWeather=0;
 		forecastWeather=0.25;
@@ -6222,7 +6222,7 @@ class Mission
 			vehicle="Infostand_2_EP1";
 			skill=0.60000002;
 			text="bailflag";
-			init="this allowDammage false;this enableSimulation false;this setpos [getpos this select 0, getpos this select 1, (getpos this select 2)+.9];";
+			init="this allowDammage false;this enableSimulation false;this setpos [7176.4,3630.69,0.0299263];";
 		};
 		class Item243
 		{
@@ -10364,7 +10364,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=6;
+		items=2;
 		class Item0
 		{
 			position[]={4987.5181,39.305859,2504.3799};
@@ -10392,74 +10392,6 @@ class Mission
 			age="UNKNOWN";
 			expCond="alive hostage1;";
 			expActiv="hint ""Someone has taken a hostage, Police have 20 minutes to rescue them.. DO NOT PUT THE HOSTAGE INTO A VEHICLE."";";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={7117.4736,35.963661,3627.3174};
-			a=25;
-			b=6;
-			angle=-345.91855;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="PB_3 animate [""innergate"",1]; ";
-			expDesactiv="PB_3 animate [""innergate"",0];";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={7142.6973,35.963661,3619.8992};
-			a=10;
-			b=4;
-			angle=-165.45386;
-			rectangular=1;
-			activationBy="WEST";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="PB_3 animate [""outergate"",1];";
-			expDesactiv="PB_3 animate [""outergate"",0];";
-			class Effects
-			{
-			};
-		};
-		class Item4
-		{
-			position[]={7142.604,35.963661,3620.0398};
-			a=10;
-			b=4;
-			angle=13.839587;
-			rectangular=1;
-			activationBy="GUER";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="PB_3 animate [""outergate"",1];";
-			expDesactiv="PB_3 animate [""outergate"",0];";
-			class Effects
-			{
-			};
-		};
-		class Item5
-		{
-			position[]={7117.4165,35.963661,3627.1895};
-			a=25;
-			b=6;
-			angle=-706.20142;
-			rectangular=1;
-			activationBy="GUER";
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="PB_3 animate [""innergate"",1];";
-			expDesactiv="PB_3 animate [""innergate"",0];";
 			class Effects
 			{
 			};

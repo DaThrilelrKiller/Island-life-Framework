@@ -20,7 +20,7 @@ _index = _selections find _selection;
 
 
 _olddamage = _gethit select _index;
-_damage = _olddamage + ((_this select 2) - _olddamage);
+_damage = _olddamage + ((_this select 2) - _olddamage)* 1;
 _gethit set [_index, _damage];
 
 _vehicle setVariable ["selections",_selections,true];

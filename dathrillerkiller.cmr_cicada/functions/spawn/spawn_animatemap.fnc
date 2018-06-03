@@ -7,6 +7,7 @@ if (!isNil "_grid")then
 	dtk_cam camSetPos [(_grid select 0),((_grid select 1)+10),(_grid select 2)+150];
 	dtk_cam camSetTarget _grid;
 	dtk_cam camCommit 3;
+	preloadCamera _grid;
 	
 	_ctrl ctrlMapAnimAdd [1,4,_grid];
 	ctrlMapAnimCommit _ctrl;

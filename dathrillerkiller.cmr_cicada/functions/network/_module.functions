@@ -16,5 +16,6 @@
 "Say3D",
 "log",
 "variable",
-"addAction"
+"addAction",
+"execvm"
 ];

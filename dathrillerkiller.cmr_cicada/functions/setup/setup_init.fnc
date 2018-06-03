@@ -15,6 +15,4 @@ if (dtk_client)then{
 player addEventHandler ["respawn", {_this call setup_respawn; _this}]; 
 /* player addEventHandler ["handleDamage", {_this call setup_handleDamage}]; */
 player addEventHandler ["fired", {_this call setup_fired}];
-}else{
-call compile preprocessFile "\MPMissions\configuration\Cfgmodules.sqf";
 };

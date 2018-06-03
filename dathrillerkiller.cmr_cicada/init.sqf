@@ -3,10 +3,8 @@ waitUntil {!isNil "BIS_fnc_init" and !isNil "BIS_MPF_InitDone"};
 /*addons FPS fixes*/
 CL2MOD_fnc_FruitMachineEnvio = {};
 
-diag_log text "[LOG]Initialization Started";
+diag_log text "[LOG]Post Initialization Started";
 
-dtk_client = hasInterface;
-dtk_server = !dtk_client;
 enableSaving [false, false];
 
 if (isNil "server_auth" && {dtk_client})then {
@@ -41,7 +39,7 @@ if (dtk_client) then {
 	[] execVM "scripts\shopfarmfaclicenseactions.sqf";
 	call compile preprocessFile format ['actions\%1actions.sqf',dtk_side];
 	call events_events;
-	diag_log text "[LOG]Initialization finished!";
+	diag_log text "[LOG]Post Initialization finished!";
 };
 
 endLoadingScreen;

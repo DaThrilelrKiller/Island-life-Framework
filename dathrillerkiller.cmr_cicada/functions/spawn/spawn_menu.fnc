@@ -57,6 +57,6 @@ if !(lifeState player == "UNCONSCIOUS")then {
 
 
 
-buttonSetAction [1601, "call spawn_setPos;"];
+buttonSetAction [1601, "[]spawn spawn_setPos;"];
 
 []spawn spawn_animatemap;

@@ -1,192 +1,333 @@
-
-_vehicle_0 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6451.8291, 5753.8315, -2.4795532e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_0 = _this;
-  _this setPos [6451.8291, 5753.8315, -2.4795532e-005];
-};
-
-_vehicle_2 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6458.8198, 5753.8608, -3.2424927e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_2 = _this;
-  _this setPos [6458.8198, 5753.8608, -3.2424927e-005];
-};
-
-_vehicle_6 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6465.8096, 5753.8608, 1.9073486e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_6 = _this;
-  _this setPos [6465.8096, 5753.8608, 1.9073486e-006];
-};
-
-_vehicle_7 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6472.8003, 5753.8901, -5.7220459e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_7 = _this;
-  _this setPos [6472.8003, 5753.8901, -5.7220459e-006];
-};
-
-_vehicle_17 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6479.7993, 5753.877, 1.9073486e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_17 = _this;
-  _this setPos [6479.7993, 5753.877, 1.9073486e-005];
-};
-
-_vehicle_18 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6486.79, 5753.9063, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_18 = _this;
-  _this setPos [6486.79, 5753.9063, 1.1444092e-005];
-};
-
-_vehicle_19 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6493.7798, 5753.9063, 4.5776367e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_19 = _this;
-  _this setPos [6493.7798, 5753.9063, 4.5776367e-005];
-};
-
-_vehicle_20 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6500.7705, 5753.9355, 3.8146973e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_20 = _this;
-  _this setPos [6500.7705, 5753.9355, 3.8146973e-005];
-};
-
-_vehicle_37 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6451.8394, 5728.9331, -7.6293945e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_37 = _this;
-  _this setPos [6451.8394, 5728.9331, -7.6293945e-006];
-};
-
-_vehicle_38 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6458.8301, 5728.9624, -1.5258789e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_38 = _this;
-  _this setPos [6458.8301, 5728.9624, -1.5258789e-005];
-};
-
-_vehicle_39 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6465.8198, 5728.9624, 1.9073486e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_39 = _this;
-  _this setPos [6465.8198, 5728.9624, 1.9073486e-005];
-};
-
-_vehicle_40 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6472.8105, 5728.9917, 1.1444092e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_40 = _this;
-  _this setPos [6472.8105, 5728.9917, 1.1444092e-005];
-};
-
-_vehicle_42 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6479.8096, 5728.9785, 3.6239624e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_42 = _this;
-  _this setPos [6479.8096, 5728.9785, 3.6239624e-005];
-};
-
-_vehicle_43 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6486.8003, 5729.0078, 2.8610229e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_43 = _this;
-  _this setPos [6486.8003, 5729.0078, 2.8610229e-005];
-};
-
-_vehicle_44 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6493.79, 5729.0078, 6.2942505e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_44 = _this;
-  _this setPos [6493.79, 5729.0078, 6.2942505e-005];
-};
-
-_vehicle_45 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6500.7808, 5729.0371, 5.531311e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_45 = _this;
-  _this setPos [6500.7808, 5729.0371, 5.531311e-005];
-};
-
-_vehicle_57 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6451.7705, 5713.2358], [], 0, "CAN_COLLIDE"];
-  _vehicle_57 = _this;
-  _this setPos [6451.7705, 5713.2358];
-};
-
-_vehicle_58 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6458.7612, 5713.2651, -7.6293945e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_58 = _this;
-  _this setPos [6458.7612, 5713.2651, -7.6293945e-006];
-};
-
-_vehicle_59 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6465.751, 5713.2651, 2.6702881e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_59 = _this;
-  _this setPos [6465.751, 5713.2651, 2.6702881e-005];
-};
-
-_vehicle_60 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6472.7417, 5713.2944, 1.9073486e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_60 = _this;
-  _this setPos [6472.7417, 5713.2944, 1.9073486e-005];
-};
-
-_vehicle_62 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6479.7407, 5713.2813, 4.3869019e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_62 = _this;
-  _this setPos [6479.7407, 5713.2813, 4.3869019e-005];
-};
-
-_vehicle_63 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6486.7314, 5713.3105, 3.6239624e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_63 = _this;
-  _this setPos [6486.7314, 5713.3105, 3.6239624e-005];
-};
-
-_vehicle_64 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6493.7212, 5713.3105, 7.0571899e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_64 = _this;
-  _this setPos [6493.7212, 5713.3105, 7.0571899e-005];
-};
-
-_vehicle_65 = objNull;
-if (true) then
-{
-  _this = createVehicle ["armat_Tarmac", [6500.7119, 5713.3398, 6.2942505e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_65 = _this;
-  _this setPos [6500.7119, 5713.3398, 6.2942505e-005];
-};
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4832.45,5159.98,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4849.51,5159.93,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.216;
+_vehicle setPos [4866.58,5159.88,5.34058e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4840.97,5159.97,-2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.216;
+_vehicle setPos [4869.77,5159.93,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4858.03,5159.92,0.000312805];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4884.11,5159.9,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.05,5170.4,-2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.18,5195.95,-3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4793.95,5163.93,-2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.1,5178.9,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4798.57,5160.15,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.14,5187.43,-3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4807.06,5160.07,-0.285873];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4823.96,5160.01,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 180.191;
+_vehicle setPos [4815.44,5160.02,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfencgate", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [4876.41,5160.7,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 179.864;
+_vehicle setPos [4909.6,5160.33,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 179.864;
+_vehicle setPos [4901.05,5160.28,-2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 179.864;
+_vehicle setPos [4918.07,5160.38,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 177.456;
+_vehicle setPos [4892.49,5160.09,-3.8147e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4937.41,5164.05,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 179.864;
+_vehicle setPos [4930.65,5160.46,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4942.86,5170.64,-4.57764e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 179.864;
+_vehicle setPos [4926.61,5160.42,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4948.29,5177.18,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4953.72,5183.75,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4959.17,5190.36,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4964.58,5196.88,-1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.35,5229.97,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.26,5212.96,-3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.41,5238.47,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.23,5204.44,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.29,5221.48,-3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4986.25,5223.13,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4970,5203.45,-1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4991.64,5229.66,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4980.85,5216.57,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4997.06,5236.21,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [4975.44,5210.02,-3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.5,5255.48,3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.57,5264,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.45,5246.99,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.6,5272.52,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.14,5248.25,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.17,5265.25,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 129.519;
+_vehicle setPos [5000.69,5240.62,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.22,5273.68,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.14,5256.74,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 270.359;
+_vehicle setPos [4794.65,5281.01,4.57764e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 309.765;
+_vehicle setPos [4797.13,5288.74,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 309.765;
+_vehicle setPos [4807.98,5301.84,6.10352e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 309.765;
+_vehicle setPos [4813.4,5308.38,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 309.765;
+_vehicle setPos [4802.54,5295.32,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 308.373;
+_vehicle setPos [4818.79,5315,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.27,5299.2,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.27,5290.69,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.23,5307.82,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.25,5282.18,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.24,5316.34,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 308.373;
+_vehicle setPos [4834.6,5334.96,-2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 308.373;
+_vehicle setPos [4824.07,5321.66,5.34058e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 308.373;
+_vehicle setPos [4829.33,5328.33,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4853.02,5344.78,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4878.51,5344.94,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4847.38,5344.79,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4861.52,5344.84,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 314.843;
+_vehicle setPos [4840.25,5341.44,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4870.01,5344.88,-1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4895.56,5344.95,-6.10352e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4904.06,5344.97,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4887.05,5344.89,-6.86646e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4912.56,5345.02,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4946.64,5345.1,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4929.61,5345.04,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4955.14,5345.11,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4921.11,5344.98,-0.00949097];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265956;
+_vehicle setPos [4938.14,5345.04,7.62939e-006];
+_vehicle = createVehicle ["armat_jailfencgate", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.178072;
+_vehicle setPos [4988.31,5348.71,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0279312;
+_vehicle setPos [4980.66,5345.23,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0265955;
+_vehicle setPos [4972.16,5345.18,1.52588e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0306359;
+_vehicle setPos [4963.65,5345.17,3.05176e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0307029;
+_vehicle setPos [4995.03,5344.98,0];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0.0307029;
+_vehicle setPos [4998.45,5345,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.24,5324.84,-7.62939e-006];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9687;
+_vehicle setPos [5003.19,5341.13,2.28882e-005];
+_vehicle = createVehicle ["armat_jailfenc1", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 89.9765;
+_vehicle setPos [5003.19,5333.36,-3.8147e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6479.81,5728.98,3.62396e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6465.82,5728.96,1.90735e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6451.77,5713.24,0];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6458.83,5728.96,-1.52588e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6458.76,5713.27,-7.62939e-006];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6472.81,5728.99,1.14441e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6465.75,5713.27,2.67029e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6451.84,5728.93,-7.62939e-006];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6472.74,5713.29,1.90735e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6479.74,5713.28,4.3869e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6486.73,5713.31,3.62396e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6486.8,5729.01,2.86102e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6493.72,5713.31,7.05719e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6500.78,5729.04,5.53131e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6500.71,5713.34,6.29425e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6493.79,5729.01,6.29425e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6458.82,5753.86,-3.24249e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6472.8,5753.89,-5.72205e-006];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6451.83,5753.83,-2.47955e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6479.8,5753.88,1.90735e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6465.81,5753.86,1.90735e-006];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6486.79,5753.91,1.14441e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6500.77,5753.94,3.8147e-005];
+_vehicle = createVehicle ["armat_Tarmac", [0,0,0], [], 0, "CAN_COLLIDE"];
+_vehicle setDir 0;
+_vehicle setPos [6493.78,5753.91,4.57764e-005];

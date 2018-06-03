@@ -18,5 +18,6 @@
 "surender",
 "interact",
 "hit",
-"setVarName"
+"setVarName",
+"onlinePlayers"
 ];

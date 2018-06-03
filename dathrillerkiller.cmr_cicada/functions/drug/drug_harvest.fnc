@@ -14,13 +14,15 @@ Prams:
 	_this select 2 - STRING Drug script name
 */
 
-
-
 private ["_plant","_seed","_drug","_drugname","_kg","_drugAmount","_seedAmount"];
 
-_plant = _this select 0;
-_seed = _this select 1;
-_drug = _this select 2;
+_data  = (call drug_neardrug) getVariable ["data",[]];
+_plant = (call drug_neardrug);
+_seed = _data select 0;
+_drug = _data select 1;
+
+if ([_plant, playableUnits, 5] call ISSE_ArrayNumberNear > 1)exitWith {systemChat "There Are To Many People Near This Item!";pickingup = false; };
+
 _drugname = _drug call config_displayname;
 _kg = [player]call storage_kg;
 		

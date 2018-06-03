@@ -3,5 +3,7 @@
 "harvest",
 "isAbleToPlant",
 "neardrug",
-"plant"
+"plant",
+"class",
+"init"
 ];

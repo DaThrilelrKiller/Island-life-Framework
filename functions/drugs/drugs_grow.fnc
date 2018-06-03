@@ -6,7 +6,7 @@ for "_i" from 0 to 1 step 0 do
 	_sleep = (60/_nubofPlants);
 	
 	{
-		_grown = _x getVariable ["grown",false];
+		_data = _x getVariable "data";
 		_Zpos = getPos _x select 2;
 		if (_Zpos < 0) then 
 		{
@@ -15,14 +15,12 @@ for "_i" from 0 to 1 step 0 do
 			_x setPos [getPos _x select 0, getPos _x select 1, _Zpos + 0.1];
 			};
 		};
-		if (_Zpos >= 0 && {!_grown})then {
+		if (_Zpos >= 0 && {!isNil "_data"})then {
 		
 			_config = _x call s_drugs_config;
 
 			_x call core_setVarName;
-			["ALL",["player",['','noscript.sqf',format ['[%1,"%2","%3"]call drug_harvest',_x,(_config select 0),(_config select 1)],25,false,true,'LeanRight',format ['player distance %3 < 5 && {!([%3,"Harvest Plant (E)","%2"]call tag_show)}',"","sfg_textures\tags\Marijuana",_x]]],"network_addAction",false,false]call network_MPExec;
-			
-			_x setVariable ["grown",true];
+			_x setVariable ["data",_config,true];		
 		};
 		
 		

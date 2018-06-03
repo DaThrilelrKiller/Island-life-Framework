@@ -1,0 +1,110 @@
+
+hooker_names = [
+'Crystal',
+'Tiffany',
+'Amber',
+'Brandy',
+'Lola',
+'Angel',
+'Ginger',
+'Candy',
+'Charity',
+'Anastasia',
+'Cherry',
+'Kitty',
+'Jade',
+'Destiny',
+'Devon',
+'Chastity',
+'Raven',
+'Scarlett',
+'Bambi',
+'Star',
+'Dallas',
+'Diamond',
+'Skye',
+'Trinity',
+'Tawny',
+'Layla',
+'Lexie',
+'Roxy',
+'Nevaeh',
+'Ashlynn',
+'Aspen',
+'Chyna',
+'Lexus',
+'Unique',
+'Chardonnay',
+'London',
+'Coco',
+'Cinnamon'
+];
+
+
+
+
+machine_learning = [
+[
+	[
+		"hey","whats", "up","yo"
+	],
+	[
+		{systemchat format ["[Hooker] %1: Nothing much, what are you up too",(_this select 1) getVariable "Name"];},
+		{}
+	]
+],
+[
+	[
+		"hey","where", "are","you"
+	],
+	[
+		{},
+		{}
+	]
+],
+[
+	[
+		"I","love", "you","babe"
+	],
+	[
+		{},
+		{}
+	]
+],
+[
+	[
+		"follow","me"
+	],
+	[
+		{},
+		{}
+	]
+],
+[
+	[
+		"go","home"
+	],
+	[
+		{},
+		{}
+	]
+],
+[
+	[
+		"are","you","hungry","food"
+	],
+	[
+		{},
+		{}
+	]
+],
+[
+	[
+		"are","you","home"
+	],
+	[
+		{},
+		{}
+	]
+]
+];

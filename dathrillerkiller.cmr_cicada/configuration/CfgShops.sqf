@@ -251,7 +251,7 @@ _copsgt =
 "RH_m4macog_cmd",
 "30Rnd_556x45_Stanag",
 "C_DD_DOD12Charger_U_P",
-"C_DD_FOR16Explorer_U_P"
+"C_DD_FOR16Explorer_U_P",
 "C_DD_CHE15Suburban_P_P",
 "C_DD_CHE08Tahoe_P_P"
 ];

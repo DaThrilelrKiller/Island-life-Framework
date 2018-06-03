@@ -346,3 +346,13 @@ DaThrillerKiller - added pre init - runs before player exsist loads all function
 DaThrillerKiller - added post init - runs when player exsist
 DaThrillerKiller - made sure connetion id is always set to the player
 Note - there should be a big diffence in load times on this update.
+
+Version 5.0
+DaThrillerKiller - Added functions to gather online player names
+DaThrillerKiller - Fixed drug dupplication
+DaThrillerKiller - Added new finger print system, use a detective brust to gather finger prints off any object
+DaThrillerKiller - Added new gates around police based
+DaThrillerKiller - new gate opening and closting function
+DaThrillerKiller - Started on new hookers
+DaThrillerKiller - made its easy for other people ot configre the batch file
+DaThrillerKiller - Added pre & post init for server side shit

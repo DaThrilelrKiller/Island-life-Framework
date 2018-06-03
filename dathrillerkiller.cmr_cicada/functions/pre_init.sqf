@@ -1,3 +1,7 @@
+diag_log text "[LOG]Pre Initialization started!";
+dtk_client = hasInterface;
+dtk_server = !dtk_client;
+
 call compile preprocessFile "configuration\CfgFunctions.fnc";
 call compile preprocessFile  "ServerLoad\miscfunctions.sqf";
 call compile preprocessFile "configuration\CfgMaster.sqf";
@@ -58,11 +62,14 @@ dtk_active_modules =
 "Vehicle",
 "Hunger",
 "Hud",
-"Spawn",
 "Tag",
 "Fishing",
 "Flashbang",
-"Lightbar"
+"Lightbar",
+"Fingerprints",
+"Gates",
+"Hooker",
+"Spawn"
 ];
 
 /*loads variables first for all active modules*/
@@ -87,3 +94,9 @@ dtk_active_modules =
 
 
 diag_log text format ["Total Modules: %2 Total Functions: %1",dtk_fnc_total,count dtk_active_modules];
+
+if (dtk_server)then {
+call compile preprocessFile "\MPMissions\functions\pre_init.sqf";
+};
+
+diag_log text "[LOG]Pre Initialization finished!";

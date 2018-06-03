@@ -1,3 +1,13 @@
 
+SET GameDirectory=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead
+SET ConfigDirectory=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\@ILRP
+set Port=2302
+set mods=@inidbi;@AntumRP;
+set pause=false;
 
-Start ""  "S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\arma2oaserver.exe"  -port=2302 "-config=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\@ILRP\TADST_config.cfg" "-cfg=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\@ILRP\TADST_basic.cfg" "-profiles=S:\Steam\steamapps\common\Arma 2 Operation Arrowhead\TADST\@ILRP" -name=@ILRP -filePatching "-mod=@inidbi;@ILRP"
+
+Start ""  "%GameDirectory%\arma2oaserver.exe"  -port=%Port% "-config=%ConfigDirectory%\TADST_config.cfg" "-cfg=%ConfigDirectory%\TADST_basic.cfg" "-profiles=%ConfigDirectory% -name=@ILRP -filePatching "-mod=%mods%"
+
+if %pause% == true (
+    pause
+)

@@ -1,3 +1,5 @@
+if (dtk_server)exitWith {};
+
 private ["_unit","_side","_uid"];
 
 _unit = _this select 0;

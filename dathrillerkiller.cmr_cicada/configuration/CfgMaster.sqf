@@ -914,7 +914,7 @@ dtk_items = [
 ["reparaturkit",["Item", "service"],["cl_repair_kit", "Repair Kit"],[15000, 15000], [10, "", ""],[true,true,true, false, "largerepair"] ],
 ["lighter",["Item", "Shop"],["lighter", "lighter"],[15000, 250], [0.5, "", ""],[true,true,true, false, "ignitefuel"] ],
 ["kleinesreparaturkit", ["Item", "service"],["cl_repair_kit", "Repair Kit"],[1500, 1000], [2, "", ""],[true,true,true, false, "repair"] ],
-["kanister", ["Item", "service"],["kanister", "Gas Can"], [5000, 2500], [2, "", ""],[true,true,true, false, "refuelveh"] ],
+["kanister", ["Item", "service"],["Fuel_can", "Gas Can"], [5000, 2500], [2, "", ""],[true,true,true, false, "refuelveh"] ],
 ["Fuelline", ["Item", "service"],["cl_syphon", "Syphon Fuel-kit"], [1000, 900], [1, "", ""],[true,true,true, false, "syphon"] ],
 ["OilBarrel", ["Item", "service"],["cl_petroleum", "Petroleum"], [5000, 5000], [10, "", ""],[true,true,true, false, "refuelveh"] ],
 ["schluesselbund",["Item", "carobjects"],["schluesselbund", "Key chain"],[0, 0], [0, "",""], [false,false, false,false,"keys_list"] ],
@@ -990,9 +990,9 @@ dtk_items = [
 ["cocaine",["Item", "drug"],["cocaine", "Cocaine"],[5500, 5500], [1.5, "",""], [true, true, true,true,"drugs"]],
 ["lsd", ["Item", "drug"], ["lsd", "LSD"],[7000, 7000], [1.5, "",""],[true,true,true, true, "drugs"]],
 ["heroin", ["Item", "drug"], ["cl_heroin_bag", "Heroin"],[8000, 8000], [1.5, "",""],[true,true,true, true, "drugs"]],
-["MarijuanaSeed",["Item", "drug"],["as_p_fiberPlant_EP1", "Marijuana Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
-["HeroinSeed",["Item", "drug"],["as_b_PinusM1s_EP1", "Poppy Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
-["CocaineSeed",["Item", "drug"],["as_b_PistaciaL1s_EP1", "Coca Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
+["MarijuanaSeed",["Item", "drug"],["Suitcase", "Marijuana Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
+["HeroinSeed",["Item", "drug"],["Suitcase", "Poppy Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
+["CocaineSeed",["Item", "drug"],["Suitcase", "Coca Seed"],[2500, 100], [0.5, "",""], [true, true, true,true,"drug_plant"]],
 ["DrugShed",["Item", "drug"],["Drug-Shed", "Drug-Shed"],[75000, 75000], [25, "",""], [true, true, true,true,""]],
 ["GymMem1",["Item", "Shop"], ["GymMem1", "Blades Natural Supplements"], [500, 500], [0.5, "",""],[true,true,true, false, "gym"]],
 ["GymMem2",["Item", "Shop"], ["GymMem2", "Hiros Hero Pills"], [1000, 1000], [0.5, "",""],[true,true,true, false, "gym"]],
@@ -1211,7 +1211,9 @@ dtk_items = [
 
 ["camera_basic",["Item", "misc"],["camera_basic", "Basic Camera"],[20000, 20000], [20, "",""], [false, true, false,false,"camera_place"]],
 ["camera_advanced",["Item", "misc"],["camera_advanced", "Advanced Camera"],[60000, 60000], [20, "",""], [false, true, false,false,"camera_place"]],
-["camera_laptop",["Item", "misc"],["camera_laptop", "CCTV Laptop"],[10000, 10000], [20, "",""], [false, true, false,false,"camera_laptop"]]
+["camera_laptop",["Item", "misc"],["camera_laptop", "CCTV Laptop"],[10000, 10000], [20, "",""], [false, true, false,false,"camera_laptop"]],
+["brush",["Item", "misc"],["Suitcase", "Detective Brush"],[1000, 1000], [20, "",""], [false, true, false,false,"fingerprints_gather"]]
+
 ];
 
 dtk_master = dtk_weapons + dtk_magazines + dtk_vehicles + dtk_items;

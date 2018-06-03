@@ -14,7 +14,8 @@ dtk_server_modules =
 "Core",
 "Fishing",
 "Accidents",
-"Disconnect"
+"Disconnect",
+"hooker"
 ];
 
 /*loads variables first for all active modules*/
@@ -40,6 +41,5 @@ dtk_server_modules =
 	}forEach _functions;
 }count dtk_server_modules;
 
-[]call s_setup_init;
-[] execVM "\MPMissions\initServer.sqf";
+call compile preprocessFile "\MPMissions\mission.sqf";
 

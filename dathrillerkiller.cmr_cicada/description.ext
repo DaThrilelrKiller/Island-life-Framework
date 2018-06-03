@@ -48,11 +48,11 @@ class MissionSQM
 #include "DATA\DIALOGS\shipments_dialog.hpp"
 #include "DATA\DIALOGS\atm_dialog.hpp"
 #include "DATA\DIALOGS\gang_dialog.hpp"
-#include "DATA\DIALOGS\camera_dialog.hpp"
 #include "DATA\DIALOGS\shopping.hpp"
 #include "DATA\DIALOGS\impound.hpp"
 #include "DATA\DIALOGS\keypress_dialog.hpp"
 #include "DATA\DIALOGS\loading_dialog.hpp"
+#include "DATA\DIALOGS\hooker_diaglog.hpp"
 
 class RscTitles
 {

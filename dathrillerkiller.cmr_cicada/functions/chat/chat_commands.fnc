@@ -102,6 +102,7 @@ switch (_command) do
 		{ 
 			if (_this != "")then {
 			["ALL",["dtk_client",format ["[%1] (%2):%3",call chat_tag,name player, _this],1],"network_chat",false,true]call network_MPExec;
+			["SERVER",[player,_stringElements],"s_hooker_speak",false,false]call network_MPExec;
 			};
 
 		};
