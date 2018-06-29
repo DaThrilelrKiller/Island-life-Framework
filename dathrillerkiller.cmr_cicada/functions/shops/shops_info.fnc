@@ -8,8 +8,8 @@ if (isNil "_data")exitWith {};
 _data = _data select 1;
 _type = _data call config_type;
 
-lbadd [303,format ["Buy cost: %1",_data call config_buycost]];
-lbadd [303,format ["Sell cost: %1",_data call config_sellcost]];
+lbadd [303,format ["Buy cost: %1$",_data call config_buycost]];
+lbadd [303,format ["Sell cost: %1$",_data call config_sellcost]];
 lbadd [303,format ["Illegal: %1",(_data call config_illegal)call core_convertBoolean]];
 lbadd [303,format ["Kind: %1",_data call config_kind]];
 lbadd [303,format ["Type: %1",_data call config_type]];
@@ -23,6 +23,7 @@ if (_type == "Item")exitWith {
 };
 if (_type == "vehicle")exitWith {
 	lbadd [303,format ["Storage: %1",_data call config_storage]];
+	(_data call config_class) call shops_vehicleInfo;
 };
 
 if (_type == "App")exitWith {};

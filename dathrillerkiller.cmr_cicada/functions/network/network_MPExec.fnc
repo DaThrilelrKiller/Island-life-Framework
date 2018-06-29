@@ -47,5 +47,5 @@ switch(typeName _target)do
 			publicVariable MPID;
 		};
 	};
-	default {diag_log format ['[ERROR] MPFRAMEWORK | INVALID TARGET | %1',_this]; };
+	default {diag_log formatText ['[ERROR] MPFRAMEWORK | INVALID TARGET | %1',_this]; };
 };

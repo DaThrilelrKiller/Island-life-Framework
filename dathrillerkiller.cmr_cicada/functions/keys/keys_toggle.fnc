@@ -8,4 +8,4 @@ _lock = !(locked _vehicle);
 _text = ["locked","un-locked"]select (locked _vehicle);
 
 [_vehicle,[_vehicle,_lock],'network_lock',false,true]call network_MPExec;
-systemChat format ["(%1) %2",_name,_text];
+[format ["(%1) %2",_name,_text],'sfg_textures\hud\2']call tag_notify;

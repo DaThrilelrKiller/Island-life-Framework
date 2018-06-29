@@ -16,4 +16,5 @@ _money = _x select 1;
 if (!isNil "kontostand")then {
 	kontostand = kontostand + _income;
 };
-systemchat format ["%1 you recived a paycheck of %2$",(name player),_income];
+
+[format ["%1 you recived a paycheck of %2$",(name player),_income],'\CA\misc\data\icons\picture_money_CA']call tag_notify;

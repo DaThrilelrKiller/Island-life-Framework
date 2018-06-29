@@ -3,8 +3,6 @@ _data = _this select 0;
 _city = _data select 0;
 _postion = _data select 1;
 
-diag_log str _postion;
-
 _type = hooker_classes call bis_selectRandom;
 _name = hooker_names call bis_selectRandom;
 _group = createGroup east;

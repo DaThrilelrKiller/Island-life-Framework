@@ -15,7 +15,7 @@ systemchat "Nothing Found in Database";
 
 
 systemchat format ["Searching Database For: %1",cdb_object call cdb_name];
-if !(isPlayer cdb_object)then{
+if !(cdb_object isKindOf "Man")then{
 	_data = (cdb_object getVariable "DTK_OwnerUID");
 	_index = lbadd [2, format ["Vehicle Is Registered To: %1",(_data select 3)]];
 	lbSetColor [2,_index,[0.23,0.34,0.98, 1]];

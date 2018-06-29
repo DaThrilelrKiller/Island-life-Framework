@@ -19,14 +19,13 @@ while {((fuel _vehicle) < 0.99)} do
 	systemChat  "refueling stoped; the vehicle has been moved"; 
 	};
 	
-	[_vehicle,[_vehicle,((fuel _vehicle)+0.1)],{(_this select 0) setFuel (_this select 1)},false,false]call network_MPExec;
+	[_vehicle,[_vehicle,((fuel _vehicle)+0.05)],{(_this select 0) setFuel (_this select 1)},false,false]call network_MPExec;
 	
+	[format['Fuel Status: %1 of 100. You refuelled 10 litres into your car. If you have enough',round(fuel _Vehicle * 100)],'sfg_textures\tags\Gas pump']call tag_notify;
 	
-	cutText [format[localize "STRS_gasstation_tanken_zwischenmsg",round(fuel _Vehicle * 100)],"PLAIN DOWN",64439];
-	
-	sleep 1;
+	sleep 1.5;
 };
 
-systemChat format ["you have refueled the vehicle %1%",round(fuel _Vehicle * 100)];
-cutText ["test","PLAIN DOWN",64439];
+[format ["you have refueled the vehicle %1%",round(fuel _Vehicle * 100)],'sfg_textures\tags\Gas pump']call tag_notify;
+
 publicvariable "v_fuel_cost";

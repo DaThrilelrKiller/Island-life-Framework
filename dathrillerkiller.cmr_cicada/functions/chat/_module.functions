@@ -1,7 +1,8 @@
-[
+﻿[
 "init",
-"checkwords",
 "commands",
 "tag",
-"keyUp"
+"keyUp",
+"Lable",
+"handler"
 ];

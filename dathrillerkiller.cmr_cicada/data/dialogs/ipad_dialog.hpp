@@ -4,7 +4,7 @@ class ipad
 	  movingEnable = true;
 	  controlsbackground[] = {};
 	  name = "ipad";
-	  onLoad = "with uiNameSpace do {ipad = _this select 0}; []spawn ipad_Open;";
+	  onLoad = "with uiNameSpace do {ipad = _this select 0};";
 	class Controls
 	{
 		class RscPicture_120011 : RscPicture 
@@ -228,7 +228,7 @@ class ipad
 			text = "1";
 			colorBackground[] = {0.6902,0.6,0.0196,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			onChar = "[_this, 1] call test;";		
+			onChar = "[_this, 10009] call test;";		
 			
 		};
 		class RscButton_1611 : Swag_RscButton 

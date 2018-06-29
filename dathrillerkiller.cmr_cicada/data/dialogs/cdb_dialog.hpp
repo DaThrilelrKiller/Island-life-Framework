@@ -3,7 +3,6 @@ class cdb_warrant{
 	controlsBackground[] = {};
 	objects[] = {};
 	controls[] = {RscFrame_1800,RscText_1000,RscEdit_1400,RscShortcutButton_1700};
-	onLoad = "['iscop','D0005']spawn ANTIHACK_DialogCheck;";
 	
  		class RscFrame_1800: RscBackground
 		{
@@ -47,7 +46,6 @@ class cdb_note{
 	controlsBackground[] = {};
 	objects[] = {};
 	controls[] = {RscFrame_1800,RscText_1000,RscEdit_1400,RscShortcutButton_1700};
-	onLoad = "['iscop','D0005']spawn ANTIHACK_DialogCheck;";
 	
  		class RscFrame_1800: RscBackground
 		{

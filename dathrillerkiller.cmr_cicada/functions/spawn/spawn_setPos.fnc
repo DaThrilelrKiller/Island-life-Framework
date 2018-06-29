@@ -14,10 +14,10 @@ if (isNil '_array') exitWith
 player setUnconscious false;
 player allowDamage true;
 ['ALL',[player,' '],'network_SwitchMove',false,true]call network_MPExec;
-[-2, {_this allowDamage true;}, player] call CBA_fnc_globalExecute;
+['ALL',player,{_this allowDamage true;},false,true]call network_MPExec;
 closeDialog 0;
 
-waitUntil {preloadCamera _array};
+waitUntil {camCommitted  dtk_cam};
 player setPos _array; 
 
 dtk_cam cameraEffect ["terminate","back"];

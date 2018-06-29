@@ -9,7 +9,7 @@ waitUntil {!isNull cursorTarget || {!ar_plates}};
 if !(ar_plates)exitWith {};
 _vehicle = CursorTarget;
 
-if ([player,_vehicle,1]call bis_fnc_isInFrontOf && {!([_vehicle,player,1]call bis_fnc_isInFrontOf)})then 
+if ([player,_vehicle,1]call bis_isInFrontOf && {!([_vehicle,player,1]call bis_isInFrontOf)})then 
 	{
 
 	_plate = _vehicle getVariable "dtk_plate";

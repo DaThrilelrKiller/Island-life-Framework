@@ -1,0 +1,76 @@
+/* This file cantain code used to stresstest / benchmark your server */
+
+
+
+/* client */
+if (isNil "counter")then {
+counter = 0;
+
+};
+
+[]spawn {
+counter = counter + 1;
+systemchat str counter;
+
+waitUntil {typename (nearestobjects [getpos player, ["Air", "Ship", "LandVehicle"], 20000]) != typename [] or isNil "counter"};
+systemchat "equal";
+};
+
+/* server */
+[]spawn {
+	for "_i" from 0 to 100000 step 0.5 do 
+	{
+		if (isNil "counter")then {
+		counter = 0;
+		};
+
+		[]spawn 
+		{
+			counter = counter + 1;
+			["ALL",counter,{systemchat str _this},false,false]call network_MPExec;
+
+			waitUntil {typename (nearestobjects [dtk_center, ["Air", "Ship", "LandVehicle"], 20000]) != typename [] or isNil "counter"};
+			["ALL",[],{systemchat "Done"},false,false]call network_MPExec;
+		};
+	};
+};
+
+[]spawn {
+	for "_i" from 0 to 500 step 1 do 
+	{
+	dmv addAction ["Benchmark","noscript.sqf",'',1,true,true,"",'typename (nearestobjects [dtk_center, ["Air", "Ship", "LandVehicle"], 1000]) != typename []'];
+	systemchat str _i;
+	};
+	dmv addAction ["Benchmark","noscript.sqf",'',1,true,true,"",'diag_log "Active";'];
+
+};
+
+
+[]spawn {
+	for "_i" from 0 to 100 step 1 do 
+	{
+	player addAction ["Benchmark","noscript.sqf",'',1,true,true,"",'typename (nearestobjects [dtk_center, ["Air", "Ship", "LandVehicle"], 1000]) != typename []'];
+	systemchat format ["Thread #%1 FPS: %2",_i,diag_fps];
+	sleep 0.5;
+	};
+
+};
+
+
+player addAction ["","",'',1,true,true,"",'
+if (!(isNull (findDisplay 24)))then {
+	(findDisplay 24) displaysetEventHandler ["keyUp", "_this call chat_KeyUp"];
+};
+'];
+
+
+if (!(isNull (findDisplay 24)))then {
+	(findDisplay 24) displaysetEventHandler ["keyUp", "_this call chat_KeyUp"];
+};
+
+
+
+
+
+
+

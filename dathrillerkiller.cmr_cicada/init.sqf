@@ -1,4 +1,4 @@
-waitUntil {!isNil "BIS_fnc_init" and !isNil "BIS_MPF_InitDone"};
+/* waitUntil {!isNil "BIS_fnc_init" and !isNil "BIS_MPF_InitDone"}; */
 
 /*addons FPS fixes*/
 CL2MOD_fnc_FruitMachineEnvio = {};
@@ -11,11 +11,12 @@ if (isNil "server_auth" && {dtk_client})then {
 	systemchat "Waiting for server to authenticate";
 	diag_log text "Waiting for server to authenticate";
 	waitUntil {!isNil "server_auth"};
+	sleep 0.5;
 	systemchat "Server authentication finished";
 	diag_log text "Server authentication finished";
 };
 
-waitUntil {!isNull player or dtk_server}; 
+waitUntil {(!isNull player && {!isNull(findDisplay 46)}) or dtk_server}; 
 diag_log text str playerSide;
 
 startLoadingScreen ["","dtk_loading"]; 
@@ -43,3 +44,5 @@ if (dtk_client) then {
 };
 
 endLoadingScreen;
+
+diag_log formatText ["Server: %1 Client: %2 Local: %3 World: %4 Name: %5 Type: %6 Time: %7 Alive: %8 Null: %9 Stats: %10 ",dtk_server,dtk_client,local player,WorldName,name player,typeOf player,Time,alive player,isNull player,AR_StaticsLoaded];

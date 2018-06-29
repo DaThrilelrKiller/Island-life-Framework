@@ -30,7 +30,7 @@ if ((player distance getmarkerpos "forest" < 175) or (player distance getmarkerp
 			for [{_k=0}, {_k < 2}, {_k=_k+1}] do 
 			{
 			["ALL",[player,"CtsDoktor_Vojak_uder1"],"network_SwitchMove",false,true]call network_MPExec;
-			titletext ["Chopping Tree...", "PLAIN DOWN"];
+			["Chopping Tree...",'\sfg_textures\items\axe']call tag_notify;
 			sleep 3; 	
 			["ALL",[player," "],"network_SwitchMove",false,true]call network_MPExec;
 			};

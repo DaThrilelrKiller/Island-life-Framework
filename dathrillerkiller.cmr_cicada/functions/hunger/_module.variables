@@ -3,7 +3,7 @@ module_hunger = true;
 dtk_hunger = 25;
 
 dtk_hunger_config = [
-[50,{systemchat "A snack sounds good"}],
+[50,{["A snack sounds good",'sfg_textures\items\apple']call tag_notify;}],
 [60,{systemchat "Your stomach starting to growl"}],
 [70,{systemchat "You need to eat soon"}],
 [80,{systemchat "You are very hungry"}],

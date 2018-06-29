@@ -14,5 +14,6 @@
 "types",
 "info",
 "init",
-"button"
+"button",
+"vehicleInfo"
 ];

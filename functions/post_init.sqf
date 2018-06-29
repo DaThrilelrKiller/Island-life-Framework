@@ -1,2 +1,2 @@
 []call s_setup_init;
-[] execVM "\MPMissions\initServer.sqf";
+[]call compile preprocessFile "\MPMissions\initServer.sqf";

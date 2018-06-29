@@ -13,7 +13,8 @@ admin_actions = [
 "Logs",
 "Spectate",
 "Camera",
-"Revive"
+"Revive",
+"Clothing"
 ];
 
 

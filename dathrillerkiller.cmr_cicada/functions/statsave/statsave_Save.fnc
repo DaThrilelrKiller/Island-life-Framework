@@ -25,13 +25,4 @@ _save =
 ];
 
 ["SERVER",_save,"S_statsave_save",false,false]call network_MPExec;
-server globalchat "Player saving statics as:";
-systemChat dtk_sidename;
-
-
-
-
-
-
-
-
+['Saving data to database...','sfg_textures\tags\save']call tag_notify

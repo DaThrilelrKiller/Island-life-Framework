@@ -6,7 +6,7 @@ if (dtk_server)exitWith{};
 	{
 		_loc = call locations_nearest;
 		if (_loc != "")then {
-		["You have entered",_loc]spawn BIS_fnc_infoText;
+		[format ["Wellcome to %1",_loc],'\sfg_textures\tags\pin']call tag_notify;
 		location_name = _loc;
 		};
 		waitUntil {_loc != call locations_nearest};

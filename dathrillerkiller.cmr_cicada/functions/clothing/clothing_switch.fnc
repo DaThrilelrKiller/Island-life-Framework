@@ -39,9 +39,10 @@ if (_skinsold != _skin) then {
 	_group selectLeader _to_become;
 	[_oldplayer] call clothing_delete;
 	removeAllWeapons _to_become;
-	[player]call core_removeEventHandlers;
 	player addEventHandler ["handleDamage", {_this call events_sethit}];
 	player addEventHandler ["respawn", {_this call setup_respawn; _this}]; 
+	player addEventHandler ["respawn", {call TFAR_fnc_processRespawn}];
+	player addEventHandler ["killed", {TF_use_saved_sw_setting = true; TF_use_saved_lr_setting = true; TF_first_radio_request = true; call TFAR_fnc_HideHint}];
 	player setPosATL _pos;
 	player setVariable ['dtk_storage',_storage,true];
 	player setVariable ["cdb_warrants",_warrants,true];
@@ -71,4 +72,12 @@ if (_skinsold != _skin) then {
 	call TFAR_addRadios;
 	call gps_diary;
 	AR_PlayerVaribale = player;
+	
+	_display = getText(configFile >> "cfgVehicles" >> _skin >> "displayName");
+	_picture = getText(configFile >> "cfgVehicles" >> _skin >> "picture");
+	_picture = ([_picture,"."] call string_split)select 0;
+	
+	
+	[format["You have changed into %1 clothes",_display],_picture]call tag_notify;
+	
 	};

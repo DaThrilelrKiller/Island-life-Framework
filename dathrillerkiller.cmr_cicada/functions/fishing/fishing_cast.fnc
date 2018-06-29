@@ -26,7 +26,7 @@ _type = _type call BIS_selectRandom;
 _time = time + (round (random 15) + 5);
 
 while {time < _time} do {
-titletext ["Nibble...", "PLAIN"];
+["Nibble...",'\sfg_textures\items\fishing-pole']call tag_notify;
 sleep round (random 4);
 };
 
@@ -34,11 +34,11 @@ _chance = _type call fishing_chance;
 _amount = round ([0,_chance]call core_random);
 
 if (_amount == 0)then {
-	titletext ["Nothing Caught..", "PLAIN DOWN"];
+	["Nothing Caught...",'\sfg_textures\items\fishing-pole']call tag_notify;
 }else
 {	
 	_name = _type call config_displayname;
-	titletext [format ["You have caought %1 %2",_amount,_name], "PLAIN DOWN"];
+	[format ["You have caought %1 %2",_amount,_name],'\sfg_textures\items\fishing-pole']call tag_notify;
 	[player,_type,_amount] call storage_add
 };
 

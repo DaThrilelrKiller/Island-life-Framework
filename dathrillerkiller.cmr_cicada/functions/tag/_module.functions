@@ -4,5 +4,6 @@
 "show",
 "init",
 "jip",
-"handler"
+"handler",
+"notify"
 ];

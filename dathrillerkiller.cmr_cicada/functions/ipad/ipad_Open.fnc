@@ -1,3 +1,6 @@
+if (dialog)exitWith {closeDialog 0;};
+createDialog "ipad";
+
 _bg = call ipad_background;
 ctrlSetText [156,_bg];
 ctrlSetText [1200,"\sfg_textures\ipad\DIALOG.PAA"];

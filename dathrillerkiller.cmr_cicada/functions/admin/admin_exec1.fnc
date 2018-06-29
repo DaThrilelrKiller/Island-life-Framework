@@ -68,9 +68,11 @@ switch (_text) do
 		call admin_Revive;
 		closeDialog 0;
 	};
-	case "Server Info": 
+	case "Clothing": 
 	{
-		 serverCommand '#restart';
+		closeDialog 0;
+		[]call admin_clothes;
 	};
+	
 
 };

@@ -4,7 +4,7 @@
 		idd = -1;
 		fadeout=0;
 		fadein=0;
-		duration = 99999999999999999;
+		duration = 10^1000;
 		name= "AR_HUD_GUI";
 		onLoad = "uiNamespace setVariable ['AR_HUD_GUI', _this select 0]";
 		objects[] = {};

@@ -88,12 +88,12 @@ dtk_active_modules =
 		',_module,_x];
 		dtk_fnc_num = _forEachIndex + 1;
 	}forEach _functions;
-	diag_log text format ["Loaded Module - %1 With %2 Functions",_module,dtk_fnc_num];
+	diag_log formatText ["Loaded Module - %1 With %2 Functions",_module,dtk_fnc_num];
 	dtk_fnc_total = dtk_fnc_total + dtk_fnc_num;
 }count dtk_active_modules;
 
 
-diag_log text format ["Total Modules: %2 Total Functions: %1",dtk_fnc_total,count dtk_active_modules];
+diag_log formatText ["Total Modules: %2 Total Functions: %1",dtk_fnc_total,count dtk_active_modules];
 
 if (dtk_server)then {
 call compile preprocessFile "\MPMissions\functions\pre_init.sqf";

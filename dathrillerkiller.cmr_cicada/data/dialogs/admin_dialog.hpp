@@ -1,3 +1,125 @@
+class admin_clothes
+{
+	idd = 555;
+	
+	class ControlsBackground
+	{
+		
+	};
+	class Controls
+	{
+		class dummybutton : RscDummy 
+		{
+			idc = 7;
+			
+		};
+		class RscBackground_2200 : RscBackground 
+		{
+			idc = 2200;
+			x = 0.180053*safezoneW+safezoneX;
+			y = 0.210987*safezoneH+safezoneY;
+			w = 0.167972*safezoneW;
+			h = 0.561026*safezoneH;
+			
+		};
+		class RscBackground_2201 : RscBackground 
+		{
+			idc = 2201;
+			x = 0.180053*safezoneW+safezoneX;
+			y = 0.176985*safezoneH+safezoneY;
+			w = 0.167972*safezoneW;
+			h = 0.0340016*safezoneH;
+			colorBackground[] = {0.5,0,0,1};
+			
+		};
+		class RscBackground_2202 : RscBackground 
+		{
+			idc = 2202;
+			x = 0.356024*safezoneW+safezoneX;
+			y = 0.210987*safezoneH+safezoneY;
+			w = 0.463923*safezoneW;
+			h = 0.561026*safezoneH;
+			
+		};
+		class RscBackground_2203 : RscBackground 
+		{
+			idc = 2203;
+			x = 0.356024*safezoneW+safezoneX;
+			y = 0.176985*safezoneH+safezoneY;
+			w = 0.463923*safezoneW;
+			h = 0.0340016*safezoneH;
+			colorBackground[] = {0.5,0,0,1};
+			
+		};
+		class RscCombo_2100 : RscCombo 
+		{
+			idc = 2100;
+			x = 0.188052*safezoneW+safezoneX;
+			y = 0.227987*safezoneH+safezoneY;
+			w = 0.143976*safezoneW;
+			h = 0.0340016*safezoneH;
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			onLBSelChanged = "_this call admin_inventory_handler;";
+			
+		};
+		class RscListbox_1500 : RscListBox 
+		{
+			idc = 1500;
+			x = 0.188052*safezoneW+safezoneX;
+			y = 0.27899*safezoneH+safezoneY;
+			w = 0.143976*safezoneW;
+			h = 0.476022*safezoneH;
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelectBackground[] = {0.5,0,0,0.5};
+			onLBSelChanged = "_this call admin_exec1;";
+			
+		};
+		class RscListbox_1501 : RscListBox 
+		{
+			idc = 1501;
+			x = safeZoneX + safeZoneW * 0.596875;
+			y = safeZoneY + safeZoneH * 0.22777778;
+			w = safeZoneW * 0.20875;
+			h = safeZoneH * 0.45333334;
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelectBackground[] = {0.5,0,0,0.5};
+		};
+		class RscButton_1601 : RscButton 
+		{
+			idc = 1601;
+			x = safeZoneX + safeZoneW * 0.371875;
+			y = safeZoneY + safeZoneH * 0.70111112;
+			w = safeZoneW * 0.183125;
+			h = safeZoneH * 0.05111112;
+			text = "Change Clothes";
+			action = "[(lbData [1501, (lbCurSel 1501)])]spawn clothing_switch;";
+			
+		};
+		class RscListbox_1501_copy1 : RscListBox 
+		{
+			idc = 1501;
+			x = safeZoneX + safeZoneW * 0.371875;
+			y = safeZoneY + safeZoneH * 0.22777778;
+			w = safeZoneW * 0.18375;
+			h = safeZoneH * 0.45333334;
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorSelectBackground[] = {0.5,0,0,0.5};
+		};
+		class RscButton_1601_copy1 : RscButton 
+		{
+			idc = 1601;
+			x = safeZoneX + safeZoneW * 0.596875;
+			y = safeZoneY + safeZoneH * 0.70111112;
+			w = safeZoneW * 0.19875;
+			h = safeZoneH * 0.05111112;
+			text = "Change Clothes";
+			action = "";
+			
+		};
+		
+	};
+	
+};
 
 
 class admin_teleport

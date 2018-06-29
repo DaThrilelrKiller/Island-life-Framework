@@ -29,7 +29,7 @@ if (_art == "use") then
 
 	if (player distance _vcl <= 6) then 
 	{
-		titletext ["Installing New Horn...", "PLAIN DOWN"];
+		["Installing New Horn...",'\sfg_textures\items\horn2']call tag_notify;
 		[player,_item,-1] call storage_add;
 		
 		player playMove "ainvpknlmstpslaywrfldnon_medic";
@@ -41,9 +41,6 @@ if (_art == "use") then
 		playsound "Drill";
 		sleep 5;
 		_vcl addWeapon _item;
-		titletext ["New Horn Installed", "PLAIN DOWN"];
-		sleep 5;
-		titletext ["", "PLAIN DOWN"];
-		
+		["New Horn Installed",'\sfg_textures\items\horn2']call tag_notify;
 	};
 };

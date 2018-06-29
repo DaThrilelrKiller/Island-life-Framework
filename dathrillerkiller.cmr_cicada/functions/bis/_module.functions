@@ -2,5 +2,6 @@
 "customgps",
 "selectrandom",
 "timeToString",
-"init"
+"init",
+"isInFrontOf"
 ];
